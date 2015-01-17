@@ -1,0 +1,169 @@
+@import url(mixins.less);
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans';
+  background-color: #eee;
+  color: #333;
+}
+ul {
+  padding: 0 0 0 18px;
+}
+h1 {
+  text-align: center;
+}
+h1,h2 {
+  line-height: 1.6;
+}
+.container {
+  background-color: #fefefe;
+}
+.annotation_icon,
+.about_icon {
+  width: 128px;
+  height: 128px;
+}
+.hero {
+  // height: 90%;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  background-color: #020305;
+  background-image: url(http://grlv.ru/i/vwcfc.jpg);
+  
+  color: #eee;
+  text-shadow: 0 1px 2px #020305;
+
+  &_h1 {
+    .transition(1s ease-in-out);
+    margin-bottom: 80px;
+    font-size: 5rem;
+  }
+  &_h2 {
+    .transition(1s ease-in-out 1s);
+    margin-bottom: 80px;
+    font-size: 4rem;
+  }
+  &_h3 {
+    span {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 4rem;
+    }
+    &-span1 {
+      .transition(.5s ease-in-out 2s);
+    }
+    &-span2 {
+      .transition(.5s ease-in-out 3s);
+    }
+    &-span3 {
+      .transition(.5s ease-in-out 4s);
+    }
+  }
+}
+.no-js {
+  .hero_text {
+    opacity: 0;
+    .translate3d(0,10px,0); 
+  }
+}
+.js {
+  .hero_text {
+    opacity: 1;
+    .translate3d(0,0,0);
+  }
+}
+
+.annotation,
+.specific,
+.about {
+  .container {
+    padding: 40px 0;
+  }
+}
+
+.about {
+
+  &_box {
+    margin-bottom: 30px;
+    text-align: center;
+    .scale(0);
+    
+    &__another {
+      margin-top: 30px;
+    }
+
+    & .about_icon {
+      .rotate(-45deg);
+    }
+
+    &1 {
+      &, & .about_icon {
+      .transition(1s ease-in-out);
+
+  }    }
+    &2 {
+      &, & .about_icon {
+        .transition(1s ease-in-out 1s);
+      }
+    }
+    &3 {
+      &, & .about_icon {
+        .transition(1s ease-in-out 2s);
+      }
+    }
+    &4 {
+      &, & .about_icon {
+        .transition(1s ease-in-out 3s);
+      }
+    }
+    &5 {
+      &, & .about_icon {
+        .transition(1s ease-in-out 4s);
+      }
+    }
+    &6 {
+      &, & .about_icon {
+        .transition(1s ease-in-out 5s);
+      }
+    }
+  }
+  &__focus {
+    & .about_box {
+      .scale(1);
+      &6 {
+        .scale(1.5);
+      }
+      & .about_icon {
+        .rotate(0);
+      }
+    }
+  }
+}
+
+.review {
+  &,
+  & .fotorama__html > div,
+  & .container {
+    background-color: #020305;
+  }
+  color: #fefefe;
+  .fotorama__html {
+    > div {
+      height: 150px;
+      padding-top: 13px;
+    }
+  }
+}
+
+.media-body h3 {
+  margin-top: 0;
+}
+
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 0;
+}
+.fotorama__html div * {
+  box-sizing: border-box;
+}
