@@ -1,0 +1,36 @@
+.b-tabs {
+	margin: auto;
+	width: 405px;
+
+	&__tab {
+		float: left;
+		width: 135px;
+		height: 40px;
+		background: transparent;
+		border: 1px solid @green;
+		border-left-width: 0;
+		font-weight: 300;
+		outline: 0;
+		&:first-child {
+			border-left-width: 1px;
+			border-radius: 4px 0 0 4px;
+		}
+		&:last-child {
+			border-radius: 0 4px 4px 0;
+		}
+
+		&_active {
+			background-color: @green;
+			color: @white;
+		}
+	}
+}
+.b-tabs-content {
+	&__tab-content {
+		display: none;
+		&_active {
+			display: block;
+			
+		}
+	}
+}
