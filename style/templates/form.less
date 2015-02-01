@@ -1,25 +1,39 @@
-.b-form {
+.form {
 	padding: 25px 40px;
-	
+	.clearfix;
+
+	&_inline {
+		padding: 0 40px;
+	}
 	&_vertical {
 		background-color: @white;
 		max-width: 650px;
 		margin: auto;
 	}
+
 	&__box {
 		float: left;
 		width: 33%;
 	}
+	&__title {
+		margin-bottom: 25px;
+		font-size: 20px;
+		text-align: center;
+	}
 }
 
-.b-label {
+.label {
 	display: block;
 	color: @gray;
 	font-weight: 300;
 	margin-bottom: 10px;
+
+	&_error {
+		color: red;
+	}
 }
 
-.b-text {
+.text {
 	height: 50px;
 	padding: 10px;
 	font-size: 20px;
@@ -33,9 +47,13 @@
 	&_line {
 		width: 90%;
 	}
+
+	&_error {
+		border-color: red;
+	}
 }
 
-.b-textarea {
+.textarea {
 	display: block;
 	width: 100%;
 	height: 100px;
@@ -43,9 +61,13 @@
 	font-size: 20px;
 	border: 1px solid @green;
 	margin-bottom: 20px;
+
+	&_error {
+		border-color: red;
+	}
 }
 
-.b-button {
+.button {
 	padding: 8px 18px 6px;
 	border: 0;
 	background-color: @green;

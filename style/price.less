@@ -1,4 +1,4 @@
-.b-price {
+.price {
 	padding-bottom: @padding-bottom;
 	
 	&__sale {
@@ -10,7 +10,7 @@
 	}
 }
 
-.b-price-list {
+.price-list {
 	float: left;
 	width: 50%;
 	&__item {
@@ -18,7 +18,7 @@
 	}
 }
 
-.b-price-item {
+.price-item {
 	background-color: @bg;
 	border: 1px solid darken(@bg, 25%);
 	border-top-width: 0;
@@ -38,7 +38,7 @@
 	}
 }
 
-.b-cost {
+.cost {
 	position: relative;
 	top: -4px;
 	float: right;
@@ -60,7 +60,7 @@
 	}
 }
 
-.b-calc {
+.calc {
 	float: left;
 	width: 50%;
 	height: 180px;
@@ -74,5 +74,9 @@
 	}
 	&__value {
 		font-size: 70px;
+	}
+	&__value-text {
+		display: inline-block;
+		
 	}
 }

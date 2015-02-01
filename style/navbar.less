@@ -1,10 +1,11 @@
-.b-navbar {
+.navbar {
+	height: 60px;
 	border-bottom: 1px solid @white;
 	background-color: @green;
 	overflow: hidden;
 	z-index: @z-index-navbar;
 	
-	.b-container {
+	.container {
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
@@ -46,12 +47,13 @@
 
 	&__join {
 		height: 40px;
-		padding: 6px 16px 6px 10px;
+		padding: 10px;
 		margin: 10px 0 10px 10px;
 		border-radius: 4px;
 		border: 1px solid @white;
 		background-color: @green;
 		color: @white;
+		text-decoration: none;
 		text-transform: uppercase;
 		.transition(all .25s ease);
 
@@ -62,7 +64,7 @@
 	}
 }
 
-.b-callback {
+.callback {
 	position: relative;
 	padding: 12px;
 	text-align: center;

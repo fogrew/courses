@@ -1,13 +1,20 @@
-.b-thumb {
-  overflow: hidden;
-  zoom: 1;
-
+.thumb {
   float: left;
-  width: (@container/3);
+  width: 33%;
+  margin-bottom: 20px;
+
+  &:nth-child(4n+1) {
+    clear: left;
+  }
 
   &__image {
   	display: block;
   	margin: auto;
+    
+    .transition(all .25s ease);
+    &:hover {
+      .scale(1.1);
+    }
   }
 
   &__content {

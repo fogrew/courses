@@ -1,4 +1,4 @@
-.b-program {
+.program {
 	background-color: @bg;
 	padding-bottom: @padding-bottom;
 	&__annotation {
@@ -6,15 +6,29 @@
 		
 	}
 	&__marks {
+		.clearfix;
+		.program__mark {
+			opacity: 1;
+			max-height: 300px;
+			overflow: hidden;
+			.transition(.5s ease-out);
+		}
 		&_hidden {
-			display: none;
-			
+			.program__mark {
+				opacity: 0;
+				max-height: 0;
+				margin-bottom: 0;
+			}
 		}
 	}
 	&__mark {
 		float: left;
 		width: 50%;
 		margin-bottom: 30px;
+
+		&:nth-child(2n+1) {
+	    clear: left;
+		}
 	}
 	ul {
 		list-style: none;
@@ -24,7 +38,7 @@
 		font-weight: 300;
 	}
 }
-.b-load-more {
+.load-more {
 	text-align: center;
 
 	&__button {
