@@ -4,13 +4,26 @@
  	width: 33%;
   min-height: 1px;
 
-  &__image {
-  	background-color: @white;
-  	border-radius: 100%;
+  &__content {
+    display: table-row;
   }
 
-	&__content {
-		margin: auto;
-		width: (@container/4);
-	}
+  &__image,
+  &__text {
+    display: table-cell;
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    vertical-align: top;
+    border-radius: 100%;
+  	background-color: @white;
+  }
+
+  &__text {
+    width: 100%;
+    vertical-align: middle;
+  }
 }

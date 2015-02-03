@@ -23,9 +23,8 @@ if ( ! filter_var($email, FILTER_VALIDATE_EMAIL)) {
 if ($message == '') {
 	$errors['message'] = 'Напишите хоть что-нибудь!';
 }
-
 if (count($errors) == 0) {
-	require 'inc/class.phpmailer.php';
+	require 'inc/phpmailer/class.phpmailer.php';
 	$mail = new PHPMailer;
 
 	$mail->AddAddress($your_email);
@@ -33,7 +32,10 @@ if (count($errors) == 0) {
 	$mail->From = $email;
 	$mail->FromName = '';
 	$mail->Subject = 'Сообщение из формы на сайте http://'.$_SERVER['HTTP_HOST'].'/';
-	$mail->Body = "Имя: ".$name."\n"."Email: ".$email."\n\n"."Сообщение:\n".$message;
+	$mail->Body  = "Имя: ".$name;
+if($email != 'seo@ipkp.ru') $mail->Body .= "\n"."Email: ".$email;
+	$mail->Body .= "\n"."Телефон: ".$phone;
+	$mail->Body .= "\n\n"."Сообщение:\n".$message;
 
 	if($mail->Send()) {
 		$response = array ('success' => 1);

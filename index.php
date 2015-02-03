@@ -20,11 +20,11 @@
         <div class="feedback__phone">(812) 915-83-13</div>
         <button class="feedback__action button">Обратный звонок</button>
       </div>
-      <img src="i/logo.png" height="110" width="110" alt="ПГУПС" class="preheader__logo">
+      <img src="i/logo.png" height="110" width="165" alt="ПГУПС" class="preheader__logo">
       <div class="preheader__title">
-        Институт повышения квалификации и перпеподготовки<br>
-        Петербургский государственный университет<br>
-        путей сообщения Императора Александра I</div>
+        <div class="preheader__title1">Институт повышения квалификации и перпеподготовки</div>
+        <div class="preheader__title2">Петербургский государственный университет<br>путей сообщения Императора Александра I</div>
+      </div>
     </div>
   </div>
 
@@ -38,7 +38,9 @@
       <div class="hero__specs">
         <div class="hero__spec spec">
           <div class="spec__content media">
-            <img src="i/i1.png" height="104" width="104" alt="" class="spec__image media__image">
+            <div class="spec__image media__image">
+              <img src="i/hero/1.svg" height="60" width="60" alt="">
+            </div>
             <div class="spec__text media__text">
               <div class="media__accent">10</div>
               <div class="media__unit">занятий</div>
@@ -47,7 +49,9 @@
         </div>
         <div class="hero__spec spec">
           <div class="spec__content media">
-            <img src="i/i2.png" height="104" width="104" alt="" class="spec__image media__image">
+            <div class="spec__image media__image">
+              <img src="i/hero/2.svg" height="60" width="60" alt="">
+            </div>
             <div class="spec__text media__text">
               <div class="media__accent">32</div>
               <div class="media__unit">ак. часа</div>
@@ -56,7 +60,9 @@
         </div>
         <div class="hero__spec spec">
           <div class="spec__content media">
-            <img src="i/i3.png" height="104" width="104" alt="" class="spec__image media__image">
+            <div class="spec__image media__image">
+              <img src="i/hero/3.svg" height="60" width="60" alt="">
+            </div>
             <div class="spec__text media__text">
               <div class="media__accent"></div>
               <div class="media__unit">Возраст<br>значения<br>не имеет</div>

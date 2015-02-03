@@ -18,7 +18,7 @@
       <div class="preheader__feedback feedback">
         <div class="feedback__title">Контактный телефон</div>
         <div class="feedback__phone">(812) 915-83-13</div>
-        <button class="feedback__action button">Обратный звонок</button>
+        <a href="#callback" class="feedback__action button">Обратный звонок</a>
       </div>
       <img src="i/logo.png" height="110" width="165" alt="ПГУПС" class="preheader__logo">
       <div class="preheader__title">
@@ -38,7 +38,9 @@
       <div class="hero__specs">
         <div class="hero__spec spec">
           <div class="spec__content media">
-            <img src="i/i1.png" height="104" width="104" alt="" class="spec__image media__image">
+            <div class="spec__image media__image">
+              <img src="i/hero/1.svg" height="60" width="60" alt="">
+            </div>
             <div class="spec__text media__text">
               <div class="media__accent">10</div>
               <div class="media__unit">занятий</div>
@@ -47,7 +49,9 @@
         </div>
         <div class="hero__spec spec">
           <div class="spec__content media">
-            <img src="i/i2.png" height="104" width="104" alt="" class="spec__image media__image">
+            <div class="spec__image media__image">
+              <img src="i/hero/2.svg" height="60" width="60" alt="">
+            </div>
             <div class="spec__text media__text">
               <div class="media__accent">32</div>
               <div class="media__unit">ак. часа</div>
@@ -56,7 +60,9 @@
         </div>
         <div class="hero__spec spec">
           <div class="spec__content media">
-            <img src="i/i3.png" height="104" width="104" alt="" class="spec__image media__image">
+            <div class="spec__image media__image">
+              <img src="i/hero/3.svg" height="60" width="60" alt="">
+            </div>
             <div class="spec__text media__text">
               <div class="media__accent"></div>
               <div class="media__unit">Возраст<br>значения<br>не имеет</div>
@@ -68,11 +74,11 @@
         <div class="hero__media"><img src="i/video.jpg" height="315" width="608" alt=""></div>
         <div class="hero__action">
           <form action="#" class="form form_vertical" id="form-hero">
-            <div class="form__title">Кризис - не время останавливаться<br>Инвестируй в себя!</div>
+            <div class="form__title">Кризис - не время останавливаться.<br>Инвестируй в себя!</div>
             <label for="hero-name" class="label">Ваше имя</label>
-            <input type="text" id="hero-name" name="hero-name" class="text text_block" placeholder="Имя">
+            <input type="text" id="hero-name" name="name" class="text text_block" placeholder="Имя">
             <label for="hero-phone" class="label">Ваш контактный телефон</label>
-            <input type="tel" id="hero-phone" name="hero-phone" class="text text_block" placeholder="+7">
+            <input type="tel" id="hero-phone" name="tel" class="text text_block" placeholder="+7">
             <input type="submit" class="button button_block" value="Заказать звонок">
           </form>
         </div>
@@ -143,10 +149,10 @@
     </div>
   </div>
 
-  <div class="contact-line">
+  <div class="contact-line" id="callback">
     <div class="container">
       <form action="#" class="form form_inline" id="form-phone">
-        <div class="form__title">Оставь свой номер — мы перезвоним и расскажем подробнее</div>
+        <div class="form__title form__title_line">Оставь свой номер — мы перезвоним и расскажем подробнее</div>
         <div class="form__box">
           <label for="contact-line-name" class="label">Представьтесь</label>
           <input type="text" id="contact-line-name" name="name" class="text text_line" placeholder="Имя">
@@ -156,7 +162,6 @@
           <input type="tel" id="contact-line-phone" name="tel" class="text text_line" placeholder="+7">
         </div>
         <div class="form__box">
-          <input type="hidden" name="email" value="seo@ipkp.ru">
           <input type="submit" class="button button_line" value="Перезвоните мне">
         </div>
       </form>
@@ -239,10 +244,10 @@
     </div>
   </div>
 
-  <div class="contact-line">
+  <div class="contact-line" id="mail">
     <div class="container">
       <form action="#" class="form form_inline" id="form-email">
-        <div class="form__title">Запишись сейчас и получи бесплатную консультацию</div>
+        <div class="form__title form__title_line">Запишись сейчас и получи бесплатную консультацию</div>
         <div class="form__box">
           <label for="contact-line1-name" class="label">Представьтесь</label>
           <input type="text" id="contact-line1-name" name="name" class="text text_line" placeholder="Имя">
@@ -252,7 +257,6 @@
           <input type="email" id="contact-line1-email" name="email" class="text text_line" placeholder="E-mail">
         </div>
         <div class="form__box">
-          <input type="hidden" name="phone" value="no number">
           <input type="submit" class="button button_line" value="Отправить заявку">
         </div>
       </form>
@@ -293,7 +297,7 @@
     </div>
   </div>
 
-  <div class="photo">
+  <div class="photo" id="photo">
     <div class="container">
       <div class="fotorama" data-width="100%" data-nav="thumbs" data-allowfullscreen="true" data-fit="cover" data-loop="true" data-keyboard="true" data-arrows="true" data-click="true" data-swipe="true">
         <a href="i/photo/photo1.jpg" data-caption="Компьютерный класс 2-2 ИПКП ПГУПС"><img src="i/photo/thumb1.jpg" height="64" width="96" alt=""></a>
@@ -316,7 +320,7 @@
       </div>
       <div class="reviews__tabs-content tabs-content" role="tabpanel">
         <div class="tabs-content__tacontent tabs-content__tacontent_active">
-          <div class="fotorama" data-width="100%" data-height="200">
+          <div class="fotorama" data-width="100%" data-height="200" data-loop="true" data-autoplay="8000">
             <div class="reviews__slide">
               <div class="reviews__review thumb">
                 <div class="thumb__content">
@@ -436,10 +440,17 @@
         </div>
       </div>
       <div class="price__calc calc">
-        <div class="calc__text">Расчёт цены в <span>пиццах</span></div>
+        <div class="calc__text">Расчёт цены в
+          <select name="calc" class="calc__select">
+            <option value="pizza" data-price="12" selected>пиццах</option>
+            <option value="metro" data-price="264">жетонах метро</option>
+            <option value="coffee" data-price="54">стаканах кофе</option>
+            <option value="cinema" data-price="13">походов в кино</option>
+          </select>
+        </div>
         <div class="calc__value">
-          <div class="calc__value-text">20,5</div>
-          <img src="i/pizza.png" height="58" width="55" alt="" class="calc__value-image">
+          <div class="calc__value-text">12</div>
+          <img src="i/calc/pizza.png" height="58" width="58" alt="" class="calc__value-image">
         </div>
       </div>
       <div class="price__sale"><strong>Скидка 5%</strong> при 100% оплате курса — <strong>10%</strong> при записи на курс SEO — <strong>15%</strong> при записи на курс SEO и контекстной рекламы</div>
@@ -474,7 +485,9 @@
           </div>
           <div class="calendar__tr">
             <div class="calendar__td">2</div>
-            <div class="calendar__td">3<div class="calendar__line<?/* calendar__line_disabled*/?>">Начало 1 группы</div></div>
+            <div class="calendar__td">3
+              <div class="calendar__line calendar__line_disabled">Начало 1 группы</div>
+            </div>
             <div class="calendar__td">4</div>
             <div class="calendar__td">5</div>
             <div class="calendar__td">6</div>
@@ -493,7 +506,20 @@
           <div class="calendar__tr">
             <div class="calendar__td">16</div>
             <div class="calendar__td">17</div>
-            <div class="calendar__td">18<div class="calendar__line">Начало 2 группы</div></div>
+            <div class="calendar__td">18
+              <div class="calendar__line">
+                Начало 2 группы
+                <div class="calendar__popover popover popover_top">
+                  <div class="popover__date">с 18 февраля</div>
+                  <div class="popover__time">по будням с 19:15 до 21:30</div>
+                  <div class="popover__place">Кронверкский пр. д.9. Компьютерный класс 2-1</div>
+                  <div class="popover__count">Осталось 5 мест!</div>
+                  <div class="popover__action">
+                    <a href="#join" class="popover__button button">Записаться</a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="calendar__td">19</div>
             <div class="calendar__td">20</div>
             <div class="calendar__td calendar__td_inactive">21</div>
@@ -686,6 +712,8 @@
         <input type="text" id="footer-name" name="name" class="text text_block" placeholder="Имя">
         <label for="footer-phone" class="label">Ваш контактный телефон</label>
         <input type="tel" id="footer-phone" name="tel" class="text text_block" placeholder="+7">
+        <label for="footer-email" class="label">Эл. почта</label>
+        <input type="email" id="footer-email" name="email" class="text text_block" placeholder="E-mail">
         <label for="footer-text" class="label">Ваще сообщение</label>
         <textarea id="footer-text" name="message" class="textarea" cols="30" rows="10" placeholder="Хочу записаться!"></textarea>
         <input type="submit" class="button button_block" value="Записаться на курс">
@@ -738,6 +766,118 @@
         </div>
       </div>
     */?></div>
+  </div>
+
+  <button class="prespoiler">Ещё сомневаетесь?</button>
+
+  <div class="spoiler">
+    <div class="container">
+      <div class="spoiler__marks">
+        <div class="spoiler__mark media">
+          <div class="media__text">
+            <div class="media__title">Почему в институте повышения квалификации?</div>
+            <div class="media__text">
+              <ul>
+                <li>Первоочередной задачей является качество обучения, а не скорость!</li>
+                <li>Наш сертификат установленного образца – это защищенная полиграфическая продукция уровня Б, с возможностью подтверждения о прохождении обучения.</li>
+                <li>Наш институт расположен в историческом центре города, от станции метро Горьковская 2 минуты ходьбы.</li>
+                <li>Институт повышения квалификации руководителей и специалистов является структурным подразделением старейшего технического ВУЗа России Петербургский государственный университет путей сообщения Императора Александра I.</li>
+                <li>Наши классы оборудованы современной техникой, интерактивной доской, мультимедийными проекторами и обязательно кондиционерами. <a href="#photo">(смотреть фото)</a></li>
+                <li>Возможность получения удостоверения о повышении квалификации по программе «Продвижение и оптимизация сайтов (SEO)». (Для слушателей с высшим образованием и после прохождения итогового тестирования).</li>
+                <li>Оплата курсов возможно частями, в течении срока обучения.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="spoiler__mark media">
+          <div class="media__text">
+            <div class="media__title">Достоинства наших курсов по продвижению сайтов:</div>
+            <div class="media__text">
+              <ul>
+                <li>Каждое занятие преподаватель разбирает сайты слушателей по теме лекции.</li>
+                <li>Занятия построены на практических примерах.</li>
+                <li>Мы представляем теоретический материал по каждой лекции в электронном виде, что помогает слушателям отработать полученные навыки.</li>
+                <li>Для закрепления материала предлагаются практические задание по прочитанной лекции.</li>
+                <li>Снятие позиций сайта по интересующим поисковым фразам до и после прохождения курса.</li>
+                <li>Гарантированный результат при выполнении рекомендаций, полученных на лекциях.</li>
+                <li>Мы обеспечиваем посещение занятий с другой группой в случае пропуска занятий по болезни или внезапной рабочей занятостью.</li>
+                <li>Бесплатный консультационный период после обучения 2 месяца.</li>
+                <li>По окончанию занятий вы получите пошаговый план по продвижению вашего сайта.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="spoiler__mark media">
+          <div class="media__text">
+            <div class="media__title">Гарантия результата</div>
+            <div class="media__text">
+              <ul>
+                <li>Мы отследим ваши результаты путем снятия позиций сайта по интересующим поисковым фразам до и после прохождения курса, а так же гарантируем результат при выполнении рекомендаций, полученных на лекциях.</li>
+                <li>Если до начала обучения ваш сайт не был виден в результатах выдачи поисковых систем, то в процессе прохождения курса улучшится видимость сайта в ПС. Проведя оптимизацию по рекомендациям лектора Вы сможете поднять позиции по целевых запросам, вывести сайт в ТОП-10 Яндекса и Google. По прохождению курса Вы получите 2 часа БЕСПЛАТНЫХ КОНСУЛЬТАЦИЙ по всем вопросам, связанными с продвижением и оптимизацией сайта.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="spoiler__mark media">
+          <div class="media__text">
+            <div class="media__title">Необходимый уровень подготовки для эффективного обучения по данному курсу?</div>
+            <div class="media__text">
+              <ul>
+                <li>Уверенный пользователь ПК</li>
+                <li>Умение находить нужную информацию с помощью поисковых систем</li>
+                <li>Представление о том, что такое сайт</li>
+                <li>Минимальные знания основ html</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="spoiler__mark">
+          <div class="title">Часто задаваемые вопросы</div>
+          <div class="media">
+            <div class="media__text">
+              <div class="media__title">Сколько длятся курсы?</div>
+              <div class="media__content">Базовый курс включает в себя 32 академических часа. Обычно, это 8 занятий по 4 акад. часа или 3 астрономических часа. Занятия проходят 2-3 раза в неделю. В случае необходимости получения более глубоких знаний вы можете продолжить  обучение со скидкой в индивидуальном порядке.</div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media__text">
+              <div class="media__title">Будет ли мой сайт на первом месте Yandex?</div>
+              <div class="media__content">Этого гарантировать мы вам не можем. Если вы будите следовать рекомендациям преподавателя и внедрять полученные знания с каждой лекции, то ваш сайт будет расти в поиске. Стоит понимать, что продвижение в конкурентных областях требует значительные расходы и большой опыт в продвижении.</div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media__text">
+              <div class="media__title">Как производиться оплата курса?</div>
+              <div class="media__content">Заключается договор в котором мы прописывает все условия оплаты. Варианты оплаты: 1. 100% (для оплативших 100% действует скидка); 2. равными частями в течении обучения. Для юридических лиц возможна оплата по завершению обучения.</div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media__text">
+              <div class="media__title">Работаете ли вы по 44ФЗ?</div>
+              <div class="media__content">Да, работаем. Курс может быть проведен через тендер/аукцион согласно ФЗ-44, ФЗ-223 о Государственных закупках</div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media__text">
+              <div class="media__title">Где проходит индивидуальное обучение?</div>
+              <div class="media__content">Индивидуальное обучение может проходить как на базе Института повышения квалификации так и с выездом к заказчику.</div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media__text">
+              <div class="media__title">Кто преподает этот курс?</div>
+              <div class="media__content">Наши преподаватели- это работающие оптимизаторы (стаж работы не меньше 4 лет) с опытом преподавания.</div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media__text">
+              <div class="media__title">SEO оптимизация или контекстная реклама?</div>
+              <div class="media__content">Работа этих двух механизмов вместе принесет наиболее максимальный эффект для продвижения вашего сайта. Стоит понимать, что СЕО оптимизация это условно бесплатный способ продвижения сайта, который направлен на внутреннею и внешнюю оптимизацию сайта и работает он не одномоментно, а на перспективу. Яндекс Директ или Гугл Адвордс — это платный механизм. Открыв рекламную компанию и заплатив деньги вы сможете привлечь посетителей на сайт. Мы рекомендуем в работе по продвижению сайта использовать и СЕО и контекст. В Институте повышения квалификации эти два курса вы можете пройти со скидкой.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   
