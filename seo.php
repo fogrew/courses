@@ -22,7 +22,7 @@
       </div>
       <img src="i/logo.png" height="110" width="165" alt="ПГУПС" class="preheader__logo">
       <div class="preheader__title">
-        <div class="preheader__title1">Институт повышения квалификации и перпеподготовки</div>
+        <div class="preheader__title1">Институт повышения квалификации и переподготовки</div>
         <div class="preheader__title2">Петербургский государственный университет<br>путей сообщения Императора Александра I</div>
       </div>
     </div>
@@ -88,62 +88,62 @@
 
   <div class="navbar" role="navigation">
     <div class="container">
-      <a href="#features" class="navbar__link">Почему мы</a>
-      <a href="#results" class="navbar__link">Гарантии</a>
-      <a href="#reviews" class="navbar__link">Отзывы</a>
-      <a href="#top" class="navbar__callback callback">
+      <a href="#features" class="navbar__item navbar__item_link">Почему мы</a>
+      <a href="#results" class="navbar__item navbar__item_link">Гарантии</a>
+      <a href="#reviews" class="navbar__item navbar__item_link">Отзывы</a>
+      <a href="#top" class="navbar__item navbar__item_callback callback">
         <span class="callback__phone">(812) 915-83-13</span>
         <span class="callback__text">обратный звонок</span>
       </a>
-      <a href="#price" class="navbar__link">Цены</a>
-      <a href="#shelude" class="navbar__link">Расписание</a>
-      <a href="#join" class="navbar__join">Записаться</a>
+      <a href="#price" class="navbar__item navbar__item_link">Цены</a>
+      <a href="#shelude" class="navbar__item navbar__item_link">Расписание</a>
+      <a href="#join" class="navbar__item navbar__item_join">Записаться</a>
     </div>
   </div>
 
   <div class="features" id="features">
     <div class="container">
-      <div class="features__title title">Почему мы</div>
+      <div class="features__title title">Обучение у нас это...</div>
       <div class="thumb">
         <img src="i/features/1.svg" height="65" alt="" class="thumb__image">
         <div class="thumb__content">
-          <div class="thumb__title">Обучение от специалистов</div>
-          <div class="thumb__text">Вас обучают не&nbsp;теоретики, а&nbsp;практики с&nbsp;постоянной работой в&nbsp;области дизайна</div>
-        </div>
-      </div>
-      <div class="thumb">
-        <img src="i/features/2.svg" height="65" alt="" class="thumb__image">
-        <div class="thumb__content">
-          <div class="thumb__title">Решение индивидуальных задач</div>
-          <div class="thumb__text">Гарантируем индивидуальный подход, обзор Вашего проекта и рекомендации по продвижению</div>
-        </div>
-      </div>
-      <div class="thumb">
-        <img src="i/features/3.svg" height="65" alt="" class="thumb__image">
-        <div class="thumb__content">
-          <div class="thumb__title">Группы 5-10 человек</div>
-          <div class="thumb__text">Маленькие группы позволят пройти обучение, общаясь с&nbsp;учениками, не&nbsp;теряя внимания преподавателя.</div>
-        </div>
-      </div>
-      <div class="thumb">
-        <img src="i/features/4.svg" height="65" alt="" class="thumb__image">
-        <div class="thumb__content">
-          <div class="thumb__title">Практический опыт</div>
-          <div class="thumb__text">На протяжении курсов дается практический опыт в&nbsp;виде домашнего задания</div>
+          <div class="thumb__title">Качество</div>
+          <div class="thumb__text">Первоочередной задачей является качество обучения, а не скорость</div>
         </div>
       </div>
       <div class="thumb">
         <img src="i/ico5.png" height="65" alt="" class="thumb__image">
         <div class="thumb__content">
-          <div class="thumb__title">Доступность информации</div>
-          <div class="thumb__text">Наши преподаватели излагают материал в&nbsp;доступной для понимания форме</div>
+          <div class="thumb__title">Доступность</div>
+          <div class="thumb__text">Оплата курса возможна частями, в течении срока обучения</div>
         </div>
       </div>
       <div class="thumb">
         <img src="i/features/6.svg" height="65" alt="" class="thumb__image">
         <div class="thumb__content">
-          <div class="thumb__title">Дружественная атмосфера</div>
-          <div class="thumb__text">Занятия построены таким образом, что Вы получаете удовольствие от&nbsp;обучения</div>
+          <div class="thumb__title">Удобство</div>
+          <div class="thumb__text">От станции метро Горьковская 2&nbsp;минуты пешком</div>
+        </div>
+      </div>
+      <div class="thumb">
+        <img src="i/features/3.svg" height="65" alt="" class="thumb__image">
+        <div class="thumb__content">
+          <div class="thumb__title">Индивидуальный подход</div>
+          <div class="thumb__text">Каждое занятие преподаватель разбирает сайты слушателей по&nbsp;теме лекции</div>
+        </div>
+      </div>
+      <div class="thumb">
+        <img src="i/features/4.svg" height="65" alt="" class="thumb__image">
+        <div class="thumb__content">
+          <div class="thumb__title">Опыт</div>
+          <div class="thumb__text">Преподаватель курса SEO - специалист, практик в&nbsp;области интернет маркетинга</div>
+        </div>
+      </div>
+      <div class="thumb">
+        <img src="i/features/2.svg" height="65" alt="" class="thumb__image">
+        <div class="thumb__content">
+          <div class="thumb__title">Практика</div>
+          <div class="thumb__text">Занятия по каждой теме построены на&nbsp;практических примерах</div>
         </div>
       </div>
     </div>
@@ -485,9 +485,9 @@
           </div>
           <div class="calendar__tr">
             <div class="calendar__td">2</div>
-            <div class="calendar__td">3
+            <div class="calendar__td">3<?/*
               <div class="calendar__line calendar__line_disabled">Начало 1 группы</div>
-            </div>
+            */?></div>
             <div class="calendar__td">4</div>
             <div class="calendar__td">5</div>
             <div class="calendar__td">6</div>
@@ -508,7 +508,7 @@
             <div class="calendar__td">17</div>
             <div class="calendar__td">18
               <div class="calendar__line">
-                Начало 2 группы
+                Начало занятий
                 <div class="calendar__popover popover popover_top">
                   <div class="popover__date">с 18 февраля</div>
                   <div class="popover__time">по будням с 19:15 до 21:30</div>
@@ -698,6 +698,56 @@
     </div>
   </div>
 
+  <div class="faq">
+    <div class="container">
+      <div class="faq__mark">
+        <div class="title">Часто задаваемые вопросы</div>
+        <div class="media">
+          <div class="media__text">
+            <div class="media__title">Сколько длятся курсы?</div>
+            <div class="media__content">Базовый курс включает в себя 32 академических часа. Обычно, это 8 занятий по 4 акад. часа или 3 астрономических часа. Занятия проходят 2-3 раза в неделю. В случае необходимости получения более глубоких знаний вы можете продолжить  обучение со скидкой в индивидуальном порядке.</div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__text">
+            <div class="media__title">Будет ли мой сайт на первом месте Yandex?</div>
+            <div class="media__content">Этого гарантировать мы вам не можем. Если вы будите следовать рекомендациям преподавателя и внедрять полученные знания с каждой лекции, то ваш сайт будет расти в поиске. Стоит понимать, что продвижение в конкурентных областях требует значительные расходы и большой опыт в продвижении.</div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__text">
+            <div class="media__title">Как производиться оплата курса?</div>
+            <div class="media__content">Заключается договор в котором мы прописывает все условия оплаты. Варианты оплаты: 1. 100% (для оплативших 100% действует скидка); 2. равными частями в течении обучения. Для юридических лиц возможна оплата по завершению обучения.</div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__text">
+            <div class="media__title">Работаете ли вы по 44ФЗ?</div>
+            <div class="media__content">Да, работаем. Курс может быть проведен через тендер/аукцион согласно ФЗ-44, ФЗ-223 о Государственных закупках</div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__text">
+            <div class="media__title">Где проходит индивидуальное обучение?</div>
+            <div class="media__content">Индивидуальное обучение может проходить как на базе Института повышения квалификации так и с выездом к заказчику.</div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__text">
+            <div class="media__title">Кто преподает этот курс?</div>
+            <div class="media__content">Наши преподаватели - это работающие оптимизаторы (стаж работы не меньше 4 лет) с опытом преподавания.</div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__text">
+            <div class="media__title">SEO оптимизация или контекстная реклама?</div>
+            <div class="media__content">Работа этих двух механизмов вместе принесет наиболее максимальный эффект для продвижения вашего сайта. Стоит понимать, что СЕО оптимизация это условно бесплатный способ продвижения сайта, который направлен на внутреннею и внешнюю оптимизацию сайта и работает он не одномоментно, а на перспективу. Яндекс Директ или Гугл Адвордс — это платный механизм. Открыв рекламную компанию и заплатив деньги вы сможете привлечь посетителей на сайт. Мы рекомендуем в работе по продвижению сайта использовать и СЕО и контекст. В Институте повышения квалификации эти два курса вы можете пройти со скидкой.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="map">
     <div id="ymap2" style="height: 500px; width: 100%;"></div>
     <script>(function(A,o,f,s,B,c){if(!A.response){return}var m=window.location.protocol==="file:"?"http:":"",a=m+c+"2.0/",j={MAP:"yandex#map",SATELLITE:"yandex#satellite",HYBRID:"yandex#hybrid",PMAP:"yandex#publicMap"},r=A.response.map,t=["package.map","package.controls","package.geoObjects"],u=o[0]?o[0]+"px":"100%",p=o[1]?o[1]+"px":"100%",y=String(Number(new Date))+String(Math.round(Math.random()*1000000)),l="ymaps"+y,b="fid"+y,C=r.lang||"ru-RU",d=a+"?lang="+C+"&coordorder=longlat&load="+t.join(",")+"&wizard=constructor&onload="+b+"&ns="+B,e=document.getElementsByTagName("script"),z,h=f.match(/\/\/(.+)$/),q=h&&h[1],n,k;if(q){for(var x=e.length-1;x>-1;x--){z=e[x];if(z.src.indexOf(q)!==-1&&!z.ctorInited){z.ctorInited=true;break}}if(z){w(function(){if(s){k=document.getElementById(s)}n=g();if(k){k.appendChild(n)}else{z.parentNode.insertBefore(n,z)}v(n);if(z.parentNode){z.parentNode.removeChild(z)}})}}function g(){var i=document.createElement("ymaps");i.setAttribute("id",l);i.style.display="block";i.style.width=u;i.style.height=p;return i}function v(G){var F=window[B],E=new F.Map(G,{center:r.center,zoom:r.zoom,type:j[r.type]},{autoFitToViewport:"always",geoObjectStrokeOpacity:1,geoObjectFillOpacity:1,geoObjectStrokeColor:"ff0000e6",geoObjectStrokeWidth:5,geoObjectFillColor:"ff000099",geoObjectIconContentLayout:F.templateLayoutFactory.createClass("$[properties.number]"),geoObjectBalloonContentBodyLayout:F.templateLayoutFactory.createClass("$[properties.name]")}),M=r.geoObjects,Q=r.styles,P=["yandex#map","yandex#satellite","yandex#hybrid"];if(r.lang==="ru-RU"||r.lang==="uk-UA"){P.push("yandex#publicMap")}for(var H in Q){if(Q.hasOwnProperty(H)){F.option.presetStorage.add("ctor#"+H,Q[H])}}var N="zoomControl";var L="smallZoomControl";var K=E.container.getSize()[1]<270?L:N;E.controls.add(K).add("mapTools").add(new F.control.TypeSelector(P));E.events.add("sizechange",function(R){var i=R.get("newSize")[1];if(K===L&&i>=270){E.controls.remove(K).add(K=N)}if(K===N&&i<270){E.controls.remove(K).add(K=L)}});for(var J=0,O=M.length;J<O;J++){var I=M[J],D=I.style;E.geoObjects.add(new F.GeoObject({geometry:I.geometry,properties:{name:I.name,number:I.number}},{preset:D.indexOf("#")===0?"ctor"+D:D}))}}function w(F){var E=window[B];if(E){E.load(t,F)}else{window[b]=function(){setTimeout(F,0);window[b]=null};var D=document.getElementsByTagName("head")[0],i=document.createElement("script");i.charset="utf-8";i.src=d;D.insertBefore(i,D.firstChild)}}}({"response":{"map":{"type":"MAP","styles":"","boundedBy":[[30.322983,59.95603],[30.322983,59.95603]],"center":[30.322983,59.95603],"size":[600,450],"zoom":17,"lang":"ru-RU","sid":"1Zuvtb6zrNds2jbG5VywmyBZ1ngs9Cck","created":"1414519810","updated":"1414519810","geoObjects":[{"geometry":{"type":"Point","coordinates":[30.322983,59.95603]},"name":"ПГУП, Кронверкский проспект, 9, Санкт-Петербург, Россия","style":"twirl#lightblueDotIcon","number":""}],"name":"Без названия","description":""}}},[null,null],'http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0IZWmyhvne2FjD2rdZKPJAWckxxm-4SR&id=ymap','ymap2','ymaps_ctor','//api-maps.yandex.ru/'));
@@ -815,64 +865,6 @@
                 <li>Мы отследим ваши результаты путем снятия позиций сайта по интересующим поисковым фразам до и после прохождения курса, а так же гарантируем результат при выполнении рекомендаций, полученных на лекциях.</li>
                 <li>Если до начала обучения ваш сайт не был виден в результатах выдачи поисковых систем, то в процессе прохождения курса улучшится видимость сайта в ПС. Проведя оптимизацию по рекомендациям лектора Вы сможете поднять позиции по целевых запросам, вывести сайт в ТОП-10 Яндекса и Google. По прохождению курса Вы получите 2 часа БЕСПЛАТНЫХ КОНСУЛЬТАЦИЙ по всем вопросам, связанными с продвижением и оптимизацией сайта.</li>
               </ul>
-            </div>
-          </div>
-        </div>
-        <div class="spoiler__mark media">
-          <div class="media__text">
-            <div class="media__title">Необходимый уровень подготовки для эффективного обучения по данному курсу?</div>
-            <div class="media__text">
-              <ul>
-                <li>Уверенный пользователь ПК</li>
-                <li>Умение находить нужную информацию с помощью поисковых систем</li>
-                <li>Представление о том, что такое сайт</li>
-                <li>Минимальные знания основ html</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="spoiler__mark">
-          <div class="title">Часто задаваемые вопросы</div>
-          <div class="media">
-            <div class="media__text">
-              <div class="media__title">Сколько длятся курсы?</div>
-              <div class="media__content">Базовый курс включает в себя 32 академических часа. Обычно, это 8 занятий по 4 акад. часа или 3 астрономических часа. Занятия проходят 2-3 раза в неделю. В случае необходимости получения более глубоких знаний вы можете продолжить  обучение со скидкой в индивидуальном порядке.</div>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__text">
-              <div class="media__title">Будет ли мой сайт на первом месте Yandex?</div>
-              <div class="media__content">Этого гарантировать мы вам не можем. Если вы будите следовать рекомендациям преподавателя и внедрять полученные знания с каждой лекции, то ваш сайт будет расти в поиске. Стоит понимать, что продвижение в конкурентных областях требует значительные расходы и большой опыт в продвижении.</div>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__text">
-              <div class="media__title">Как производиться оплата курса?</div>
-              <div class="media__content">Заключается договор в котором мы прописывает все условия оплаты. Варианты оплаты: 1. 100% (для оплативших 100% действует скидка); 2. равными частями в течении обучения. Для юридических лиц возможна оплата по завершению обучения.</div>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__text">
-              <div class="media__title">Работаете ли вы по 44ФЗ?</div>
-              <div class="media__content">Да, работаем. Курс может быть проведен через тендер/аукцион согласно ФЗ-44, ФЗ-223 о Государственных закупках</div>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__text">
-              <div class="media__title">Где проходит индивидуальное обучение?</div>
-              <div class="media__content">Индивидуальное обучение может проходить как на базе Института повышения квалификации так и с выездом к заказчику.</div>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__text">
-              <div class="media__title">Кто преподает этот курс?</div>
-              <div class="media__content">Наши преподаватели- это работающие оптимизаторы (стаж работы не меньше 4 лет) с опытом преподавания.</div>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__text">
-              <div class="media__title">SEO оптимизация или контекстная реклама?</div>
-              <div class="media__content">Работа этих двух механизмов вместе принесет наиболее максимальный эффект для продвижения вашего сайта. Стоит понимать, что СЕО оптимизация это условно бесплатный способ продвижения сайта, который направлен на внутреннею и внешнюю оптимизацию сайта и работает он не одномоментно, а на перспективу. Яндекс Директ или Гугл Адвордс — это платный механизм. Открыв рекламную компанию и заплатив деньги вы сможете привлечь посетителей на сайт. Мы рекомендуем в работе по продвижению сайта использовать и СЕО и контекст. В Институте повышения квалификации эти два курса вы можете пройти со скидкой.</div>
             </div>
           </div>
         </div>
