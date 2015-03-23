@@ -1,0 +1,33 @@
+.map {
+	position: relative;
+	overflow: hidden;
+	background: url(https://static-maps.yandex.ru/1.x/?l=map&ll=30.320698,59.956503&z=17&pt=30.322983,59.95603,pm2dgl) center no-repeat;
+	background-size: 1000px auto;
+	// Yandex Maps Static API https://tech.yandex.ru/maps/doc/staticapi/1.x/dg/concepts/input_params-docpage/
+	#map {
+		height: 500px;
+		width: 100%;
+	}
+	&__overlay {
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		.translate3d(-50%,0,0);
+		background-color: rgba(255,255,255,.85);
+		color: @base;
+		z-index: 1;
+		padding: 30px;
+		.transition(.5s ease);
+	}
+	&:hover &__overlay,
+	&:focus &__overlay {
+		.translate3d(-50%,-120px,0);
+		padding-bottom: 10px;
+	}
+	&__title {
+		font-size: 48px;
+		font-weight: normal;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}

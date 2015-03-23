@@ -1,0 +1,43 @@
+.hero {
+	background: url('/i/bg.jpg');
+	background-size: 100% 150%;
+	background-position-y: 0%;
+
+	&__about,
+	&__specs {
+		width: (@container - (@container/5));
+		margin: 0 auto 30px;
+		.clearfix;
+	}
+
+	&__text {
+		padding: 5px 0;
+		color: darken(@gray, 15%);
+		font-weight: 300;
+	}
+
+	&__call {
+		.clearfix;
+	}
+
+	&__media {
+		float: left;
+	}
+
+	&__action {
+		margin-left: 60px;
+		float: left;
+		width: 315px;
+	}
+
+	&__form-title {
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 10px;
+		&_line {
+			font-size: 26px;
+			text-align: center;
+			margin: 0 -40px 26px;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<?
+require 'meta.php';
+require 'header.php';
+require 'hero.php';
+require 'navbar.php';
+require 'features.php';
+require 'form-phone.php';
+require 'results.php';
+require 'who.php';
+require 'form-mail.php';
+require 'stats.php';
+require 'photo.php';
+require 'reviews.php';
+require 'prices.php';
+require 'faq.php';
+require 'program.php';
+require 'footer.php';
+require 'similar.php';
+require 'spoiler.php';

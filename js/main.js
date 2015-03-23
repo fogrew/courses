@@ -78,7 +78,7 @@ $(function() {
       if (errors === 0) {
         $.ajax({
           type: 'POST',
-          url: 'send_contact.php',
+          url: 'inc/core/engine/form.php',
           dataType: 'json',
           data: {
             action: 'sendContact',
@@ -138,4 +138,21 @@ $(function() {
       return false;
     });
   });
+
+  if($('#map').length) {
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                center: [59.956503, 30.320698],
+                zoom: 17
+            }),
+            myPlacemark = new ymaps.Placemark([59.95603, 30.322983], 0, {
+                iconLayout: 'default#image',
+                iconImageHref: 'i/map.svg',
+                iconImageSize: [38, 55],
+                iconImageOffset: [-48, -48]
+            });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+    });
+  }
 });

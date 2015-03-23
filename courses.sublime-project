@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"name": "courses"
+		}
+	],
+    "settings":
+    {
+        "less2css":
+        {
+        	"lessBaseDir": "inc/view/base/less",
+        	"outputDir": "inc/view/base/css",
+            "minify": true,
+            "autoCompile": true
+        }
+    }
+}
