@@ -24,6 +24,7 @@
 <?}?>
       </div>
 <?
+if($text['hero']['next'] !== '') {
 $next = date("d-m-Y", strtotime($text['shelude']['courses'][0]['date']));
 $next = explode("-", $next);
 ?>
@@ -35,6 +36,7 @@ $next = explode("-", $next);
           <span class="next__year"><?=$next[2]?></span> 
         </div>
       </div>
+<?}?>
       <div class="hero__call">
         <div class="hero__media"><img src="<?=$text['hero']['image_big']?>" alt=""></div>
         <div class="hero__action">
