@@ -11,8 +11,8 @@
     {
         "less2css":
         {
-        	"lessBaseDir": "inc/view/base/less",
-        	"outputDir": "inc/view/base/css",
+        	"lessBaseDir": "inc/view/design/less",
+        	"outputDir": "inc/view/design/css",
             "minify": true,
             "autoCompile": true
         }
