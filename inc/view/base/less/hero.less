@@ -1,5 +1,5 @@
 .hero {
-	background: url('/i/bg.jpg');
+	background: @hero-bg;
 	background-size: 100% 150%;
 	background-position-y: 0%;
 
@@ -7,13 +7,13 @@
 	&__specs,
 	&__next {
 		width: (@container - (@container/5));
-		margin: 0 auto 30px;
+		margin: 0 auto @hero-offset;
 		.clearfix;
 	}
 
 	&__text {
 		padding: 5px 0;
-		color: darken(@gray, 15%);
+		color: @hero-text;
 		font-weight: 300;
 	}
 
@@ -26,13 +26,13 @@
 	}
 
 	&__action {
-		margin-left: 60px;
+		margin-left: @hero-form-ml;
 		float: left;
-		width: 315px;
+		width: @hero-form-width;
 	}
 
 	&__form-title {
-		font-size: 20px;
+		font-size: 22px;
 		text-align: center;
 		margin-bottom: 10px;
 		&_line {

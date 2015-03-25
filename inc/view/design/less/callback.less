@@ -1,0 +1,30 @@
+.callback {
+	position: relative;
+	padding: 12px 30px;
+	text-align: center;
+	background-color: @callback-bg;
+	.transition(all .25s ease);
+
+	&:hover,
+	&:focus {
+		color: @white;
+	}
+
+	&__phone,
+	&__text {
+		position: relative;
+		
+		z-index: 3;
+		display: block;
+	}
+
+	&__phone {
+		font-size: 20px;
+		
+	}
+	&__text {
+		font-size: 14px;
+		text-decoration: underline;
+		
+	}
+}

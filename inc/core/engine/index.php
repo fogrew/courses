@@ -10,12 +10,12 @@ if($_SERVER['REQUEST_URI']=='/index.php'){header("Location: /");exit;}
 // load texts
 foreach ($blocks as $key => $block) {
 	$base_text = 'inc/text/' . LANG . '/base/' . $block . '.php';
-	$page_text = 'inc/text/' . LANG . '/' . PAGE . '/' . $block . '.php';
+	$page_text = 'inc/text/' . LANG . '/' . TEXT . '/' . $block . '.php';
 
 	if(is_readable($base_text)) {
 		include $base_text;
 	} else {
-		echo '<script>console.error("Базовый текст блока '.$block.' для страницы '.PAGE.' отсутствует");</script>';
+		echo '<script>console.error("Базовый текст блока '.$block.' для страницы '.TEXT.' отсутствует");</script>';
 	}
 
 	if(is_readable($page_text)) {
@@ -26,7 +26,7 @@ foreach ($blocks as $key => $block) {
 // load view
 foreach ($blocks as $key => $block) {
 	$base_view = 'inc/view/base/html/'.$block.'.php';
-	$page_view = 'inc/view/'.$config['site']['view'].'/html/'.$block.'.php';
+	$page_view = 'inc/view/'.VIEW.'/html/'.$block.'.php';
 
 	if(is_readable($base_view)) {
 		$viewer[$block] = $base_view;
@@ -40,7 +40,7 @@ foreach ($blocks as $key => $block) {
 }	
 
 $base_scripts = 'inc/view/base/html/scripts.php';
-$page_scripts = 'inc/view/'.$config['site']['view'].'/html/scripts.php';
+$page_scripts = 'inc/view/'.VIEW.'/html/scripts.php';
 if(is_readable($base_scripts)) {
 	$viewer['scripts'] = $base_scripts;
 } else if(!is_readable($page_scripts)) {

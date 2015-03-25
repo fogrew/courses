@@ -8,5 +8,7 @@ $text['hero']['content'][0]['title']       = '8';
 $text['hero']['content'][1]['image']       = 'inc/view/'.VIEW.'/i/hero/2.png';
 $text['hero']['content'][2]['image']       = 'inc/view/'.VIEW.'/i/hero/3.png';
 
+$text['hero']['form']['name']              = '';
 $text['hero']['form']['name-placeholder']  = 'Введите Ваше имя';
+$text['hero']['form']['phone']             = '';
 $text['hero']['form']['phone-placeholder'] = 'Введите Ваш телефон';
