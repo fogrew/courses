@@ -2,7 +2,24 @@
 ini_set ('display_errors', 0);
 header('Content-type: text/html; charset=utf-8');
 if(isset($_GET['dev'])) {
+	$dev = true;
+}
+if($dev === true) {
 	ini_set ('display_errors', 1);
+}
+if(isset($_GET['less'])) {
+	$less = true;
+}
+if($less === true) {
+  include ROOT."/inc/core/libs/less/Less.php";
+  $options = array( "compress"=>true );
+  if($dev == true) {
+  	$options["sourceMap"] = true;
+  }
+  $parser = new Less_Parser($options);
+  $parser->parseFile( ROOT.'/inc/view/'.VIEW.'/less/style.less', ROOT.'/inc/view/'.VIEW.'/less/' );
+  $parser->parse('@generated: true;');
+  file_put_contents(ROOT.'/inc/view/'.VIEW.'/css/style.css',$parser->getCss());
 }
 
 if($_SERVER['REQUEST_URI']=='/index.php'){header("Location: /");exit;}
