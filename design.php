@@ -26,6 +26,7 @@ $blocks = [
 	'shelude',
 	'program',
 	'faq',
+	'sertificates',
 	'map',
 	'footer',
 	'similar',
