@@ -16,10 +16,14 @@ if($less === true) {
   if($dev == true) {
   	$options["sourceMap"] = true;
   }
-  $parser = new Less_Parser($options);
-  $parser->parseFile( ROOT.'/inc/view/'.VIEW.'/less/style.less', ROOT.'/inc/view/'.VIEW.'/less/' );
-  $parser->parse('@generated: true;');
-  file_put_contents(ROOT.'/inc/view/'.VIEW.'/css/style.css',$parser->getCss());
+  try {
+	  $parser = new Less_Parser($options);
+	  $parser->parseFile( ROOT.'/inc/view/'.VIEW.'/less/style.less', ROOT.'/inc/view/'.VIEW.'/less/' );
+	  $parser->parse('@generated: true;');
+	  file_put_contents(ROOT.'/inc/view/'.VIEW.'/css/style.css',$parser->getCss());
+	} catch(Exception $e){
+	    echo '<script>console.error("'.htmlspecialchars(str_replace("\n"," ",$e->getMessage())).'");</script>';
+	}
 }
 
 if($_SERVER['REQUEST_URI']=='/index.php'){header("Location: /");exit;}
