@@ -45,6 +45,10 @@ $(function() {
     $('.calc__value-text').text($(this).find('option:selected').data('price'));
   });
 
+  $('.accordion').on('click','.accordion__title', function() {
+    $(this).toggleClass('accordion__title_opened').next().slideToggle();
+  });
+
   // load more program
   $('.load-more__button').on('click', function() {
     var txt = $(".program__marks_hidden").length ? 'Скрыть' : 'Посмотреть ещё';

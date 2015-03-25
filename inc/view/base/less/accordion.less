@@ -1,0 +1,23 @@
+.accordion {
+  &__title {
+    border-bottom: 1px solid #666;
+    cursor: pointer;
+
+    &:before {
+      content: '►';
+      display: inline-block;
+      vertical-align: baseline;
+      padding: 4px;
+      color: #666;
+      .transition(.2s ease);
+    }
+    &_opened {
+      &:before {
+        .rotate(90deg);
+      }
+    }
+  }
+  &__text {
+    display: none;
+  }
+}
