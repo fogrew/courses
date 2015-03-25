@@ -5,7 +5,7 @@
   <title><?=$text['meta']['title']?></title>
   <meta name="description" content="<?=$text['meta']['description']?>" />
   <meta name="keywords" content="<?=$text['meta']['keywords']?>" />
-
+	<link href="i/favicon.ico" rel="shortcut icon" type="image/x-icon" />
   <meta name="viewport" content="width=1000">
 
   <link rel="stylesheet" href="inc/view/<?=VIEW?>/css/style.css" />
