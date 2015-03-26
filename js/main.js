@@ -45,6 +45,13 @@ $(function() {
     $('.calc__value-text').text($(this).find('option:selected').data('price'));
   });
 
+  $('.owl-carousel').owlCarousel({
+    items:4,
+    lazyLoad:true,
+    loop:true,
+    margin:10
+  });
+
   $('.accordion').on('click','.accordion__title', function() {
     $(this).toggleClass('accordion__title_opened').next().slideToggle();
   });

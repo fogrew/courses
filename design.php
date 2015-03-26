@@ -25,6 +25,7 @@ $blocks = [
 	'prices',
 	'shelude',
 	'program',
+	'clients',
 	'faq',
 	'sertificates',
 	'map',
