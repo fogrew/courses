@@ -1,4 +1,6 @@
 <?
+$text['clients']['title'] = 'Мы уже обучили';
+
 $text['clients']['content'][0]['image'] = 'i/clients/client1.jpg';
 $text['clients']['content'][0]['text']  = '';
 
@@ -11,7 +13,7 @@ $text['clients']['content'][2]['text']  = '';
 $text['clients']['content'][3]['image'] = 'i/clients/client4.jpg';
 $text['clients']['content'][3]['text']  = '';
 
-$text['clients']['content'][4]['image'] = 'i/clients/client5.jpg';
+$text['clients']['content'][4]['image'] = 'i/clients/client5.png';
 $text['clients']['content'][4]['text']  = '';
 
 $text['clients']['content'][5]['image'] = 'i/clients/client6.png';
@@ -35,7 +37,7 @@ $text['clients']['content'][10]['text']  = '';
 $text['clients']['content'][11]['image'] = 'i/clients/client12.png';
 $text['clients']['content'][11]['text']  = '';
 
-$text['clients']['content'][12]['image'] = 'i/clients/client13.png';
+$text['clients']['content'][12]['image'] = 'i/clients/client13.jpg';
 $text['clients']['content'][12]['text']  = '';
 
 $text['clients']['content'][13]['image'] = 'i/clients/client14.png';

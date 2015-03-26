@@ -46,7 +46,7 @@ $(function() {
   });
 
   $('.owl-carousel').owlCarousel({
-    items:4,
+    items:6,
     lazyLoad:true,
     loop:true,
     margin:10
