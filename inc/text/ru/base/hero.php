@@ -1,21 +1,21 @@
-<?
+<? $i = 0;
 $text['hero']['image']                     = 'i/hero-seo.png';
 $text['hero']['image_big']                 = 'i/seo.jpg';
 $text['hero']['title']                     = 'Практический курс по оптимизации и продвижению сайтов (SEO)';
 $text['hero']['text']                      = 'Наш курс по SEO оптимизации сайтов поможет Вам на практике получить представление о всех механизмах продвижения сайтов. После окончания курса вы сможете оптимизировать сайты, выстраивать стратегию продвижения, общаться с веб программистами, дизайнерами, веб мастерами на одном языке. На занятиях буду рассмотрены множество факторов влияющих на продвижение сайтов (внутренняя и внешняя оптимизация сайта, поведенческие факторы, контент и др.) изучив которые вы сможете самостоятельно работать с данными инструментами.';
 $text['hero']['next']                      = 'Ближайшее занятие:';
 
-$text['hero']['content'][0]['image']       = 'i/hero/1.svg';
-$text['hero']['content'][0]['title']       = '10';
-$text['hero']['content'][0]['text']        = 'занятий';
+$text['hero']['content'][$i]['image']       = 'i/hero/1.svg';
+$text['hero']['content'][$i]['title']       = '10';
+$text['hero']['content'][$i++]['text']        = 'занятий';
 
-$text['hero']['content'][1]['image']       = 'i/hero/2.svg';
-$text['hero']['content'][1]['title']       = '32';
-$text['hero']['content'][1]['text']        = 'ак. часа';
+$text['hero']['content'][$i]['image']       = 'i/hero/2.svg';
+$text['hero']['content'][$i]['title']       = '32';
+$text['hero']['content'][$i++]['text']        = 'ак. часа';
 
-$text['hero']['content'][2]['image']       = 'i/hero/3.svg';
-$text['hero']['content'][2]['title']       = '';
-$text['hero']['content'][2]['text']        = 'Возраст<br>значения<br>не имеет';
+$text['hero']['content'][$i]['image']       = 'i/hero/3.svg';
+$text['hero']['content'][$i]['title']       = '';
+$text['hero']['content'][$i++]['text']        = 'Возраст<br>значения<br>не имеет';
 
 $text['hero']['form']['text']['line1']     = 'Кризис - не время останавливаться.';
 $text['hero']['form']['text']['line2']     = 'Инвестируй в себя!';

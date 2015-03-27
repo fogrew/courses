@@ -1,9 +1,30 @@
-<?
-$text['navbar']['features'] = 'Почему мы';
-$text['navbar']['results']  = 'Гарантии';
-$text['navbar']['reviews']  = 'Отзывы';
-$text['navbar']['phone']    = '(812) 915-83-13';
-$text['navbar']['callback'] = 'обратный звонок';
-$text['navbar']['price']    = 'Цены';
-$text['navbar']['shelude']  = 'Расписание';
-$text['navbar']['join']     = 'Записаться';
+<? $i = 0;
+
+$text['navbar'][$i]['anchor']     = 'features';
+$text['navbar'][$i]['type']       = 'link';
+$text['navbar'][$i++]['text']     = 'Почему мы';
+
+$text['navbar'][$i]['anchor']     = 'results';
+$text['navbar'][$i]['type']       = 'link';
+$text['navbar'][$i++]['text']     = 'Гарантии';
+
+$text['navbar'][$i]['anchor']     = 'reviews';
+$text['navbar'][$i]['type']       = 'link';
+$text['navbar'][$i++]['text']     = 'Отзывы';
+
+$text['navbar'][$i]['anchor']     = 'top';
+$text['navbar'][$i]['type']       = 'callback';
+$text['navbar'][$i]['phone']      = '(812) 915-83-13';
+$text['navbar'][$i++]['callback'] = 'обратный звонок';
+
+$text['navbar'][$i]['anchor']     = 'price';
+$text['navbar'][$i]['type']       = 'link';
+$text['navbar'][$i++]['text']     = 'Цены';
+
+$text['navbar'][$i]['anchor']     = 'shelude';
+$text['navbar'][$i]['type']       = 'link';
+$text['navbar'][$i++]['text']     = 'Расписание';
+
+$text['navbar'][$i]['anchor']     = 'join';
+$text['navbar'][$i]['type']       = 'join';
+$text['navbar'][$i++]['text']     = 'Записаться';
