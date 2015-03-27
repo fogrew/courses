@@ -3,12 +3,16 @@ ini_set ('display_errors', 0);
 header('Content-type: text/html; charset=utf-8');
 if(isset($_GET['dev'])) {
 	$dev = true;
+} else {
+	$dev = false;
 }
 if($dev === true) {
 	ini_set ('display_errors', 1);
 }
 if(isset($_GET['less'])) {
 	$less = true;
+} else {
+	$less = false;
 }
 if($less === true) {
   include ROOT."/inc/core/libs/less/Less.php";
