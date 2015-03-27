@@ -1,6 +1,10 @@
 <? $i = 0;
 $text['faq']['title']                 = 'Часто задаваемые вопросы';
 
+$text['faq']['allow-show']['title']   = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
+$text['faq']['allow-show']['text']    = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam inventore assumenda tenetur eum delectus cupiditate ipsa iste, totam ratione consequuntur tempore quibusdam numquam eligendi perferendis earum maxime suscipit optio placeat.';
+
+
 $text['faq']['content'][$i]['title']  = 'Сколько длятся курсы?';
 $text['faq']['content'][$i++]['text'] = 'Базовый курс включает в себя 32 академических часа. Обычно, это 8 занятий по 4 акад. часа или 3 астрономических часа. Занятия проходят 2-3 раза в неделю. В случае необходимости получения более глубоких знаний вы можете продолжить  обучение со скидкой в индивидуальном порядке.';
 
