@@ -49,7 +49,10 @@ $(function() {
     items:6,
     lazyLoad:true,
     loop:true,
-    margin:10
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
   });
 
   $('.accordion').on('click','.accordion__title', function() {
