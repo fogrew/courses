@@ -2,7 +2,32 @@
 ini_set ('display_errors', 0);
 header('Content-type: text/html; charset=utf-8');
 if(isset($_GET['dev'])) {
+	$dev = true;
+} else {
+	$dev = false;
+}
+if($dev === true) {
 	ini_set ('display_errors', 1);
+}
+if(isset($_GET['less'])) {
+	$less = true;
+} else {
+	$less = false;
+}
+if($less === true) {
+  include ROOT."/inc/core/libs/less/Less.php";
+  $options = array( "compress"=>true );
+  if($dev == true) {
+  	$options["sourceMap"] = true;
+  }
+  try {
+	  $parser = new Less_Parser($options);
+	  $parser->parseFile( ROOT.'/inc/view/'.VIEW.'/less/style.less', ROOT.'/inc/view/'.VIEW.'/less/' );
+	  $parser->parse('@generated: true;');
+	  file_put_contents(ROOT.'/inc/view/'.VIEW.'/css/style.css',$parser->getCss());
+	} catch(Exception $e){
+	    echo '<script>console.error("'.htmlspecialchars(str_replace("\n"," ",$e->getMessage())).'");</script>';
+	}
 }
 
 if($_SERVER['REQUEST_URI']=='/index.php'){header("Location: /");exit;}
@@ -10,12 +35,12 @@ if($_SERVER['REQUEST_URI']=='/index.php'){header("Location: /");exit;}
 // load texts
 foreach ($blocks as $key => $block) {
 	$base_text = 'inc/text/' . LANG . '/base/' . $block . '.php';
-	$page_text = 'inc/text/' . LANG . '/' . PAGE . '/' . $block . '.php';
+	$page_text = 'inc/text/' . LANG . '/' . TEXT . '/' . $block . '.php';
 
 	if(is_readable($base_text)) {
 		include $base_text;
 	} else {
-		echo '<script>console.error("Базовый текст блока '.$block.' для страницы '.PAGE.' отсутствует");</script>';
+		echo '<script>console.error("Базовый текст блока '.$block.' для страницы '.TEXT.' отсутствует");</script>';
 	}
 
 	if(is_readable($page_text)) {
@@ -26,7 +51,7 @@ foreach ($blocks as $key => $block) {
 // load view
 foreach ($blocks as $key => $block) {
 	$base_view = 'inc/view/base/html/'.$block.'.php';
-	$page_view = 'inc/view/'.$config['site']['view'].'/html/'.$block.'.php';
+	$page_view = 'inc/view/'.VIEW.'/html/'.$block.'.php';
 
 	if(is_readable($base_view)) {
 		$viewer[$block] = $base_view;
@@ -40,7 +65,7 @@ foreach ($blocks as $key => $block) {
 }	
 
 $base_scripts = 'inc/view/base/html/scripts.php';
-$page_scripts = 'inc/view/'.$config['site']['view'].'/html/scripts.php';
+$page_scripts = 'inc/view/'.VIEW.'/html/scripts.php';
 if(is_readable($base_scripts)) {
 	$viewer['scripts'] = $base_scripts;
 } else if(!is_readable($page_scripts)) {

@@ -1,107 +1,88 @@
-<?$text['shelude'] = [
-	'title'  => 'Расписание',
-	'courses' => [
-		[
-			'date'      => '2015-4-2',
-			'title'     => 'Начало 1 группы',
-			'date-text' => 'с 7 марта',
-			'time'      => 'по субботам 10:30—14:30',
-			'place'     => 'Кронверкский пр. д.9. Компьютерный класс 2-1',
-			'count'     => 'Осталось 8 мест!',
-			'button'    => 'Записаться',
-			'position'  => 'bottom'
-		],
-		[
-			'date'      => '2015-03-10',
-			'title'     => 'Начало 2 группы',
-			'date-text' => 'с 10 марта',
-			'time'      => 'по будням с 19:15 до 21:30',
-			'place'     => 'Кронверкский пр. д.9. Компьютерный класс 2-1',
-			'count'     => 'Осталось 2 места!',
-			'button'    => 'Записаться',
-			'position'  => 'top'
-		],
-		[
-			'date'      => '2015-03-23',
-			'title'     => 'Начало 3 группы',
-			'date-text' => 'с 23 марта',
-			'time'      => 'по будням с 19:15 до 21:30',
-			'place'     => 'Кронверкский пр. д.9. Компьютерный класс 2-1',
-			'count'     => 'Осталось 5 мест!',
-			'button'    => 'Записаться',
-			'position'  => 'right'
-		],
-		[
-			'date'      => '2015-03-27',
-			'title'     => 'Начало 4 группы',
-			'date-text' => 'с 27 марта',
-			'time'      => 'по будням с 19:15 до 21:30',
-			'place'     => 'Кронверкский пр. д.9. Компьютерный класс 2-1',
-			'count'     => 'Осталось 5 мест!',
-			'button'    => 'Записаться',
-			'position'  => 'top'
-		]
-	],
-	'months' => [
-		[
-			'short'  => 'янв.',
-			'full'   => 'Январь',
-			'plural' => 'января'
-		],
-		[
-			'short'  => 'февр.',
-			'full'   => 'Февраль',
-			'plural' => 'февраля'
-		],
-		[
-			'short'  => 'марта',
-			'full'   => 'Март',
-			'plural' => 'марта'
-		],
-		[
-			'short'  => 'апр.',
-			'full'   => 'Апрель',
-			'plural' => 'апреля'
-		],
-		[
-			'short'  => 'мая.',
-			'full'   => 'Май',
-			'plural' => 'мая'
-		],
-		[
-			'short'  => 'июня',
-			'full'   => 'Июнь',
-			'plural' => 'июня'
-		],
-		[
-			'short'  => 'июля',
-			'full'   => 'Июль',
-			'plural' => 'июля'
-		],
-		[
-			'short'  => 'авг.',
-			'full'   => 'Август',
-			'plural' => 'августа'
-		],
-		[
-			'short'  => 'сент.',
-			'full'   => 'Сентябрь',
-			'plural' => 'сентября'
-		],
-		[
-			'short'  => 'окт.',
-			'full'   => 'Октябрь',
-			'plural' => 'октября'
-		],
-		[
-			'short'  => 'нояб.',
-			'full'   => 'Ноябрь',
-			'plural' => 'ноября'
-		],
-		[
-			'short'  => 'дек.',
-			'full'   => 'Декабрь',
-			'plural' => 'декабря'
-		]
-	]
-];
+<? $i = 0; $m = 0;
+$text['shelude']['title']                   = 'Расписание';
+
+// Даты курсов
+$text['shelude']['courses'][$i]['date']       = '2015-4-2';
+$text['shelude']['courses'][$i]['title']      = 'Начало 1 группы';
+$text['shelude']['courses'][$i]['date-text']  = 'с 7 марта';
+$text['shelude']['courses'][$i]['time']       = 'по субботам 10:30—14:30';
+$text['shelude']['courses'][$i]['place']      = 'Кронверкский пр. д.9. Компьютерный класс 2-1';
+$text['shelude']['courses'][$i]['count']      = 'Осталось 8 мест!';
+$text['shelude']['courses'][$i]['button']     = 'Записаться';
+$text['shelude']['courses'][$i++]['position'] = 'bottom';
+
+$text['shelude']['courses'][$i]['date']       = '2015-03-10';
+$text['shelude']['courses'][$i]['title']      = 'Начало 2 группы';
+$text['shelude']['courses'][$i]['date-text']  = 'с 10 марта';
+$text['shelude']['courses'][$i]['time']       = 'по будням с 19:15 до 21:30';
+$text['shelude']['courses'][$i]['place']      = 'Кронверкский пр. д.9. Компьютерный класс 2-1';
+$text['shelude']['courses'][$i]['count']      = 'Осталось 2 места!';
+$text['shelude']['courses'][$i]['button']     = 'Записаться';
+$text['shelude']['courses'][$i++]['position'] = 'top';
+
+$text['shelude']['courses'][$i]['date']       = '2015-03-23';
+$text['shelude']['courses'][$i]['title']      = 'Начало 3 группы';
+$text['shelude']['courses'][$i]['date-text']  = 'с 23 марта';
+$text['shelude']['courses'][$i]['time']       = 'по будням с 19:15 до 21:30';
+$text['shelude']['courses'][$i]['place']      = 'Кронверкский пр. д.9. Компьютерный класс 2-1';
+$text['shelude']['courses'][$i]['count']      = 'Осталось 5 мест!';
+$text['shelude']['courses'][$i]['button']     = 'Записаться';
+$text['shelude']['courses'][$i++]['position'] = 'right';
+
+$text['shelude']['courses'][$i]['date']       = '2015-03-27';
+$text['shelude']['courses'][$i]['title']      = 'Начало 4 группы';
+$text['shelude']['courses'][$i]['date-text']  = 'с 27 марта';
+$text['shelude']['courses'][$i]['time']       = 'по будням с 19:15 до 21:30';
+$text['shelude']['courses'][$i]['place']      = 'Кронверкский пр. д.9. Компьютерный класс 2-1';
+$text['shelude']['courses'][$i]['count']      = 'Осталось 5 мест!';
+$text['shelude']['courses'][$i]['button']     = 'Записаться';
+$text['shelude']['courses'][$i++]['position'] = 'top';
+
+// Названия месяцев
+$text['shelude']['months'][$m]['short']    = 'янв.';
+$text['shelude']['months'][$m]['full']     = 'Январь';
+$text['shelude']['months'][$m++]['plural'] = 'января';
+
+$text['shelude']['months'][$m]['short']    = 'февр.';
+$text['shelude']['months'][$m]['full']     = 'Февраль';
+$text['shelude']['months'][$m++]['plural'] = 'февраля';
+
+$text['shelude']['months'][$m]['short']    = 'марта';
+$text['shelude']['months'][$m]['full']     = 'Март';
+$text['shelude']['months'][$m++]['plural'] = 'марта';
+
+$text['shelude']['months'][$m]['short']    = 'апр.';
+$text['shelude']['months'][$m]['full']     = 'Апрель';
+$text['shelude']['months'][$m++]['plural'] = 'апреля';
+
+$text['shelude']['months'][$m]['short']    = 'мая';
+$text['shelude']['months'][$m]['full']     = 'Май';
+$text['shelude']['months'][$m++]['plural'] = 'мая';
+
+$text['shelude']['months'][$m]['short']    = 'июня';
+$text['shelude']['months'][$m]['full']     = 'Июнь';
+$text['shelude']['months'][$m++]['plural'] = 'июня';
+
+$text['shelude']['months'][$m]['short']    = 'июля';
+$text['shelude']['months'][$m]['full']     = 'Июль';
+$text['shelude']['months'][$m++]['plural'] = 'июля';
+
+$text['shelude']['months'][$m]['short']    = 'авг.';
+$text['shelude']['months'][$m]['full']     = 'Август';
+$text['shelude']['months'][$m++]['plural'] = 'августа';
+
+$text['shelude']['months'][$m]['short']    = 'сент.';
+$text['shelude']['months'][$m]['full']     = 'Сентябрь';
+$text['shelude']['months'][$m++]['plural'] = 'сентября';
+
+$text['shelude']['months'][$m]['short']    = 'окт.';
+$text['shelude']['months'][$m]['full']     = 'Октябрь';
+$text['shelude']['months'][$m++]['plural'] = 'октября';
+
+$text['shelude']['months'][$m]['short']    = 'нояб.';
+$text['shelude']['months'][$m]['full']     = 'Ноябрь';
+$text['shelude']['months'][$m++]['plural'] = 'ноября';
+
+$text['shelude']['months'][$m]['short']    = 'дек.';
+$text['shelude']['months'][$m]['full']     = 'Декабрь';
+$text['shelude']['months'][$m++]['plural'] = 'декабря';

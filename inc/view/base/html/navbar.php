@@ -1,15 +1,15 @@
 
   <div class="navbar" role="navigation">
     <div class="container">
-      <a href="#features" class="navbar__item navbar__item_link"><?=$text['navbar']['features']?></a>
-      <a href="#results" class="navbar__item navbar__item_link"><?=$text['navbar']['results']?></a>
-      <a href="#reviews" class="navbar__item navbar__item_link"><?=$text['navbar']['reviews']?></a>
+<?foreach ($text['navbar'] as $i => $item) { ?>
+<?  if($item['type']=='callback') {?>
       <a href="#top" class="navbar__item navbar__item_callback callback">
-        <span class="callback__phone"><?=$text['navbar']['phone']?></span>
-        <span class="callback__text"><?=$text['navbar']['callback']?></span>
+        <span class="callback__phone"><?=$item['phone']?></span>
+        <span class="callback__text"><?=$item['callback']?></span>
       </a>
-      <a href="#price" class="navbar__item navbar__item_link"><?=$text['navbar']['price']?></a>
-      <a href="#shelude" class="navbar__item navbar__item_link"><?=$text['navbar']['shelude']?></a>
-      <a href="#join" class="navbar__item navbar__item_join"><?=$text['navbar']['join']?></a>
+<?  }else{?>
+      <a href="#<?=$item['anchor']?>" class="navbar__item <?if($item['type']=='join') {?>navbar__item_join<?}else{?>navbar__item_link<?}?>"><?=$item['text']?></a>
+<?  }?>
+<?}?>
     </div>
   </div>

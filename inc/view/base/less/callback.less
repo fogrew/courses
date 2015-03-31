@@ -1,0 +1,54 @@
+.callback {
+	position: relative;
+	padding: 12px;
+	text-align: center;
+	background-color: @callback-bg;
+	margin: 0 40px;
+	.transition(all .25s ease);
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		display: block;
+		width: 60px;
+		height: 60px;
+		border-radius: 10px;
+		z-index: 2;
+
+		background-color: @base;
+
+		.rotate(45deg);
+	}
+	&:before {
+		left: -30px;
+	}
+	&:after {
+		right: -30px;
+	}
+
+	&:hover,
+	&:focus {
+		color: @white;
+		.transform(rotate(1deg) scale(1.05));
+	}
+
+	&__phone,
+	&__text {
+		position: relative;
+		
+		z-index: 3;
+		display: block;
+	}
+
+	&__phone {
+		font-size: 20px;
+		
+	}
+	&__text {
+		font-size: 14px;
+		text-decoration: underline;
+		
+	}
+}
