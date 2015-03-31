@@ -1,6 +1,3 @@
-
-  <div class="program block" id="program">
-    <div class="container">
       <h2 class="program__title title"><?=$text['program']['title']?></h2>
       <div class="program__annotation"><?=$text['program']['annotation']?> — <a href="<?=$text['program']['download']['link']?>"><?=$text['program']['download']['text']?></a></div>
       <div class="program__marks">
@@ -28,5 +25,3 @@
       <div class="load-more">
         <button class="button load-more__button"><?=$text['program']['load']['text']?></button>
       </div>
-    </div>
-  </div>

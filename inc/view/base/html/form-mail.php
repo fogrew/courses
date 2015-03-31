@@ -1,7 +1,4 @@
-
-  <div class="contact-line" id="mail">
-    <div class="container">
-      <form action="#" class="form form_inline" id="form-email">
+      <form action="#" class="form form_inline">
         <div class="form__title form__title_line"><?=$text['form-email']['title']?></div>
         <div class="form__box">
           <label for="contact-line1-name" class="label"><?=$text['form-email']['name']?></label>
@@ -15,5 +12,3 @@
           <input type="submit" class="button button_line" value="<?=$text['form-email']['button']?>">
         </div>
       </form>
-    </div>
-  </div>

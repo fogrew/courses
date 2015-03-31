@@ -1,6 +1,3 @@
-
-  <div class="hero block">
-    <div class="container">
       <h1 class="hero__title title"><?=$text['hero']['title']?></h1>
       <div class="hero__about media">
         <div class="media__left">
@@ -59,5 +56,3 @@ $next = explode("-", $next);
           </form>
         </div>
       </div>
-    </div>
-  </div>

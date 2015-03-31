@@ -1,6 +1,3 @@
-
-  <div class="similar block">
-    <div class="container">
       <div class="similar__title"><?=$text['similar']['title']?></div>
 <?foreach ($text['similar']['content'] as $i => $similar) {?>
       <div class="similar__content">
@@ -16,5 +13,3 @@
         </div>
       </div>
 <?}?>
-    </div>
-  </div>

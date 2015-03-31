@@ -1,6 +1,3 @@
-
-  <div class="reviews block" id="reviews">
-    <div class="container">
       <h2 class="reviews__title title"><?=$text['reviews']['title']?></h2>
       <div class="reviews__tabs tabs" role="tablist">
         <button class="tabs__tab tabs__tab_active" role="tab" data-toggle="tab"><?=$text['reviews']['tabs']['video']?></button>
@@ -17,7 +14,7 @@
         </div>
         <div class="tabs-content__tacontent" role="tabpanel">
           <div class="fotorama" data-width="100%" data-height="200" data-loop="true" data-autoplay="8000">
-          <?$br = 3;?>
+<?$br = 3;?>
 <?foreach ($text['reviews']['content']['text'] as $i => $review) { ?>
 <?  if($i % $br == 0) {?>
             <div class="reviews__slide">
@@ -42,9 +39,7 @@
 <?}?>
         </div>
       </div>
-    </div>
-  </div>
-
+      
 <?foreach ($text['reviews']['content']['text'] as $i => $review) { ?>
   <div class="modal" id="">
     <div class="media">

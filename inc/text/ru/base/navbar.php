@@ -25,6 +25,6 @@ $text['navbar'][$i]['anchor']     = 'shelude';
 $text['navbar'][$i]['type']       = 'link';
 $text['navbar'][$i++]['text']     = 'Расписание';
 
-$text['navbar'][$i]['anchor']     = 'join';
-$text['navbar'][$i]['type']       = 'join';
+$text['navbar'][$i]['anchor']     = 'footer';
+$text['navbar'][$i]['type']       = 'button';
 $text['navbar'][$i++]['text']     = 'Записаться';

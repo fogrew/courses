@@ -1,6 +1,3 @@
-
-  <div class="header">
-    <div class="container">
       <div class="header__feedback feedback">
         <div class="feedback__title"><?=$text['header']['contact']?></div>
         <div class="feedback__phone"><?=$text['header']['phone']?></div>
@@ -11,5 +8,3 @@
         <div class="header__title1"><?=$text['header']['line1']?></div>
         <div class="header__title2"><?=$text['header']['line2']?></div>
       </div>
-    </div>
-  </div>

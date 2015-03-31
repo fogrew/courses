@@ -35,7 +35,18 @@ a {
 }
 
 .block {
-	padding-bottom: @padding-bottom;
+	&_light {
+		background-color: @bg-gray;
+	}
+	&_bright {
+		background-color: @bg;
+	}
+	&_screen {
+		padding-bottom: @padding-screen;
+	}
+	&_line {
+		padding: @padding-line;
+	}
 }
 
 .title {

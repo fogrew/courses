@@ -1,6 +1,3 @@
-
-  <div class="results block" id="results">
-    <div class="container">
       <h2 class="results__title title"><?=$text['results']['title']?></h2>
 <?foreach ($text['results']['content'] as $i => $result) { ?>
       <div class="results__result media">
@@ -11,5 +8,3 @@
         </div>
       </div>
 <?}?>
-    </div>
-  </div>

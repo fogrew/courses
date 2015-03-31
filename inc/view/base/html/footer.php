@@ -1,6 +1,3 @@
-
-  <div class="footer block" id="join">
-    <div class="container">
       <form action="#" class="form form_vertical" id="form-footer">
         <div class="form__title"><?=$text['footer']['title']?></div>
         <label for="footer-name" class="label"><?=$text['footer']['form']['name']?></label>
@@ -13,5 +10,3 @@
         <textarea id="footer-text" name="message" class="textarea" cols="30" rows="10" placeholder="<?=$text['footer']['form']['message-placeholder']?>"></textarea>
         <input type="submit" class="button button_block" value="<?=$text['footer']['form']['button']?>">
       </form>
-    </div>
-  </div>

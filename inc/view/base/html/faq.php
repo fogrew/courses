@@ -1,6 +1,3 @@
-
-  <div class="faq block">
-    <div class="container">
       <div class="faq__mark">
         <div class="title"><?=$text['faq']['title']?></div>
 <?foreach ($text['faq']['content'] as $i => $answer) { ?>
@@ -18,5 +15,3 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>

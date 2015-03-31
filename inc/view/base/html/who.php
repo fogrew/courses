@@ -1,6 +1,3 @@
-
-  <div class="who block">
-    <div class="container">
       <h2 class="who__title title"><?=$text['who']['title']?></h2>
 <?foreach ($text['who']['media'] as $i => $who) { ?>
       <div class="who__mark media">
@@ -10,5 +7,3 @@
         </div>
       </div>
 <?}?>
-    </div>
-  </div>

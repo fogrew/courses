@@ -1,7 +1,4 @@
-
-  <div class="contact-line" id="callback">
-    <div class="container">
-      <form action="#" class="form form_inline" id="form-phone">
+      <form action="#" class="form form_inline">
         <div class="form__title form__title_line"><?=$text['form-phone']['title']?></div>
         <div class="form__box">
           <label for="contact-line-name" class="label"><?=$text['form-phone']['name']?></label>
@@ -15,5 +12,3 @@
           <input type="submit" class="button button_line" value="<?=$text['form-phone']['button']?>">
         </div>
       </form>
-    </div>
-  </div>

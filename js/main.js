@@ -150,9 +150,9 @@ $(function() {
     });
   });
 
-  if($('#map').length) {
+  if($('#map-view').length) {
     ymaps.ready(function () {
-        var myMap = new ymaps.Map('map', {
+        var myMap = new ymaps.Map('map-view', {
                 center: [59.956503, 30.320698],
                 zoom: 17
             }),

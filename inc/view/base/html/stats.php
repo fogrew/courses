@@ -1,6 +1,3 @@
-
-  <div class="stats block">
-    <div class="container">
       <h2 class="stats__title title"><?=$text['stats']['title']?></h2>
 <?foreach ($text['stats']['media'] as $i => $stat) { ?>
       <div class="stats__stat media">
@@ -11,5 +8,3 @@
         </div>
       </div>
 <?}?>
-    </div>
-  </div>

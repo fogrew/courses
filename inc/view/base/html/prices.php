@@ -2,9 +2,6 @@
 $sale = explode('-',$text['shelude']['courses'][0]['date']);
 $sale = date("Y-m-d",mktime(0,0,0,$sale[1],$sale[2]-$text['prices']['sale'],$sale[0]));
 ?>
-
-  <div class="price block" id="price">
-    <div class="container">
       <div class="price__title title"><?=$text['prices']['title']?></div>
       <div class="price__list price-list">
 <?foreach ($text['prices']['content'] as $i => $price) { ?>
@@ -35,5 +32,3 @@ $sale = date("Y-m-d",mktime(0,0,0,$sale[1],$sale[2]-$text['prices']['sale'],$sal
       <div class="price__sale">
         <?foreach ($text['prices']['sales'] as $i => $sale) { ?><strong><?=$sale['sale']?></strong> <?=$sale['text']?><?if(++$i < count($text['prices']['sales'])){?><br><?}}?>
       </div>
-    </div>
-  </div>

@@ -61,8 +61,6 @@ while(true) {
 // в виде календаря
 // Выводим таблицу
 ?>  
-  <div class="shelude block" id="shelude">
-    <div class="container">
       <div class="shelude__title title"><?=$text['shelude']['title']?></div>
       <div class="calendar">
         <div class="calendar__th_header"><?=$text['shelude']['months'][$month-1]['full'].' '.$year?></div>
@@ -117,5 +115,3 @@ while(true) {
 <?  } ?>
         </div>
       </div>
-    </div>
-  </div>

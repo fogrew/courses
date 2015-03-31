@@ -1,6 +1,3 @@
-
-  <div class="features block" id="features">
-    <div class="container">
       <div class="features__title title"><?=$text['features']['title']?></div>
 <?foreach ($text['features']['content'] as $i => $feature) { ?>
       <div class="thumb">
@@ -11,5 +8,3 @@
         </div>
       </div>
 <?}?>
-    </div>
-  </div>
