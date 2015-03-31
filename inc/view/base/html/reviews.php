@@ -44,3 +44,12 @@
       </div>
     </div>
   </div>
+
+<?foreach ($text['reviews']['content']['text'] as $i => $review) { ?>
+  <div class="modal" id="">
+    <div class="media">
+      <div class="media__title"></div>
+      <div class="media__text"></div>
+    </div>
+  </div>
+<?}?>
