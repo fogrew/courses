@@ -6,6 +6,6 @@ $text['footer']['form']['phone']               = 'Ваш контактный т
 $text['footer']['form']['phone-placeholder']   = '+7';
 $text['footer']['form']['email']               = 'Эл. почта';
 $text['footer']['form']['email-placeholder']   = 'E-mail';
-$text['footer']['form']['message']             = 'Ваще сообщение';
+$text['footer']['form']['message']             = 'Ваше сообщение';
 $text['footer']['form']['message-placeholder'] = 'Хочу записаться!';
 $text['footer']['form']['button']              = 'Записаться на курс';

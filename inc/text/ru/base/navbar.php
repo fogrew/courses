@@ -4,13 +4,13 @@ $text['navbar'][$i]['anchor']     = 'features';
 $text['navbar'][$i]['type']       = 'link';
 $text['navbar'][$i++]['text']     = 'Почему мы';
 
-$text['navbar'][$i]['anchor']     = 'results';
-$text['navbar'][$i]['type']       = 'link';
-$text['navbar'][$i++]['text']     = 'Гарантии';
-
 $text['navbar'][$i]['anchor']     = 'reviews';
 $text['navbar'][$i]['type']       = 'link';
 $text['navbar'][$i++]['text']     = 'Отзывы';
+
+$text['navbar'][$i]['anchor']     = 'program';
+$text['navbar'][$i]['type']       = 'link';
+$text['navbar'][$i++]['text']     = 'Программа';
 
 $text['navbar'][$i]['anchor']     = 'top';
 $text['navbar'][$i]['type']       = 'callback';
