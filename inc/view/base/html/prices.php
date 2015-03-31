@@ -20,7 +20,7 @@ $sale = date("Y-m-d",mktime(0,0,0,$sale[1],$sale[2]-$text['prices']['sale'],$sal
         <div class="calc__text"><?=$text['prices']['calc']['title']?>
           <select name="calc" class="calc__select">
 <?foreach ($text['prices']['calc']['select'] as $i => $select) { ?>
-            <option value="<?=$select['value']?>" data-price="<?=$select['price']?>" selected><?=$select['text']?></option>
+            <option value="<?=$select['value']?>" data-price="<?=$select['price']?>" <?=$i==0?'selected':''?>><?=$select['text']?></option>
 <?}?>
           </select>
         </div>
