@@ -45,6 +45,16 @@ $(function() {
     $('.calc__value-text').text($(this).find('option:selected').data('price'));
   });
 
+  $('.link-modal').on('click', function() {
+    $('.modal').removeClass('modal_opened');
+    $('#'+$(this).data('modal')).addClass('modal_opened');
+    $('.overlay').addClass('overlay_opened');
+  });
+  $('.overlay').on('click', function() {
+    $('.modal').removeClass('modal_opened');
+    $(this).removeClass('overlay_opened');
+  });
+
   $('.owl-carousel').owlCarousel({
     items:6,
     lazyLoad:true,

@@ -19,10 +19,10 @@
 <?  if($i % $br == 0) {?>
             <div class="reviews__slide">
 <?  }?>
-              <div class="reviews__review thumb">
+              <div class="reviews__review thumb fotorama__select">
                 <div class="thumb__content">
                   <div class="thumb__title"><?=$review['author']?></div>
-                  <div class="thumb__text"><?=$review['text']?></div>
+                  <div class="thumb__text"><?=$review['text']?><br><button type="button" data-modal="review<?=$i?>" class="button link-modal">Посмотреть оригинал</button></div>
                 </div>
               </div>
 <?  if(($i+1) % $br == 0) {?>
@@ -40,11 +40,10 @@
         </div>
       </div>
       
-<?/*foreach ($text['reviews']['content']['text'] as $i => $review) { ?>
-  <div class="modal" id="">
-    <div class="media">
-      <div class="media__title"></div>
-      <div class="media__text"></div>
-    </div>
-  </div>
-<?}*/?>
+<?foreach ($text['reviews']['content']['text'] as $i => $review) { ?>
+<?  if(isset($review['image'])) {?>
+<button type="button" data-modal="review<?=$i?>" class="button link-modal">Посмотреть оригинал <?=$i?></button>
+  <img src="<?=$review['image']?>" alt="<?=$text['reviews']['title']?>" class="modal" id="review<?=$i?>">
+<?  }?>
+<?}?>
+<div class="overlay"></div>
