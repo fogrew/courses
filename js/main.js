@@ -45,14 +45,20 @@ $(function() {
     $('.calc__value-text').text($(this).find('option:selected').data('price'));
   });
 
-  $('.link-modal').on('click', function() {
-    $('.modal').removeClass('modal_opened');
-    $('#'+$(this).data('modal')).addClass('modal_opened');
-    $('.overlay').addClass('overlay_opened');
-  });
-  $('.overlay').on('click', function() {
-    $('.modal').removeClass('modal_opened');
-    $(this).removeClass('overlay_opened');
+  $('.fotorama').on('fotorama:ready', function (e, fotorama) {
+    $('.link-modal').on('click', function() {
+      $('.modal').removeClass('modal_opened');
+      $('#'+$(this).data('modal')).addClass('modal_opened');
+      $('.overlay').addClass('overlay_opened');
+      return false;
+    });
+    $('.overlay').on('click', function() {
+      $('.modal').removeClass('modal_opened');
+      $(this).removeClass('overlay_opened');
+    });
+    $('.modal').on('click', function() {
+      $(this).toggleClass('modal_zoom');
+    });
   });
 
   $('.owl-carousel').owlCarousel({

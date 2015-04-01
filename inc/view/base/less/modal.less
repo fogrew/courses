@@ -17,6 +17,44 @@
 		visibility: visible;
 		top: 50%;
 	}
+	&__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: @z-index-modal + 50;
+		border-radius: 50%;
+		background-color: @white;
+		color: @base;
+		height: 30px;
+		width: 30px;
+		font-size: 28px;
+		line-height: 26px;
+		text-align: center;
+		cursor: pointer;
+		font-weight: 300;
+		box-shadow: 0 0 10px 1px @base;
+		.translate3d(25%,-25%,0);
+		opacity: .5;
+		.transition(opacity .5s ease);
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&__image {
+		position: relative;
+		z-index: @z-index-modal + 1;
+		top: 0;
+		left: 50%;
+		height: 90vmin;
+		height: 90vh;
+		.translate3d(-50%,0,0);
+		.transition(height .5s ease);
+	}
+	&_zoom {
+		.modal__image {
+			height: auto;
+		}
+	}
 }
 .overlay {
 	position: fixed;

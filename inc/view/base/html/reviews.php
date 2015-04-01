@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="tabs-content__tacontent" role="tabpanel">
-          <div class="fotorama" data-width="100%" data-height="200" data-loop="true" data-autoplay="8000">
+          <div class="fotorama" data-width="100%" data-height="200" data-loop="true" data-autoplay="8000" data-arrows="true" data-click="false" data-swipe="true">
 <?$br = 3;?>
 <?foreach ($text['reviews']['content']['text'] as $i => $review) { ?>
 <?  if($i % $br == 0) {?>
@@ -22,7 +22,7 @@
               <div class="reviews__review thumb fotorama__select">
                 <div class="thumb__content">
                   <div class="thumb__title"><?=$review['author']?></div>
-                  <div class="thumb__text"><?=$review['text']?><br><button type="button" data-modal="review<?=$i?>" class="button link-modal">Посмотреть оригинал</button></div>
+                  <div class="thumb__text"><?=$review['text']?><br><a href="<?=$review['image']?>" data-modal="review<?=$i?>" class="link-modal">Посмотреть оригинал</a></div>
                 </div>
               </div>
 <?  if(($i+1) % $br == 0) {?>
@@ -42,8 +42,10 @@
       
 <?foreach ($text['reviews']['content']['text'] as $i => $review) { ?>
 <?  if(isset($review['image'])) {?>
-<button type="button" data-modal="review<?=$i?>" class="button link-modal">Посмотреть оригинал <?=$i?></button>
-  <img src="<?=$review['image']?>" alt="<?=$text['reviews']['title']?>" class="modal" id="review<?=$i?>">
+  <div class="modal" id="review<?=$i?>">
+    <i class="modal__close">×</i>
+    <img src="<?=$review['image']?>" alt="<?=$text['reviews']['title']?>" class="modal__image">
+  </div>
 <?  }?>
 <?}?>
 <div class="overlay"></div>
