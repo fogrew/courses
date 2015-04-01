@@ -22,7 +22,7 @@
               <div class="reviews__review thumb fotorama__select">
                 <div class="thumb__content">
                   <div class="thumb__title"><?=$review['author']?></div>
-                  <div class="thumb__text"><?=$review['text']?><br><a href="<?=$review['image']?>" data-modal="review<?=$i?>" class="link-modal">Посмотреть оригинал</a></div>
+                  <div class="thumb__text"><?=$review['text']?><br><a href="<?=$review['image']?>" data-fancybox-group="text" title="<?=$review['author']?>: <?=$review['text']?>" class="fancybox">Посмотреть оригинал</a></div>
                 </div>
               </div>
 <?  if(($i+1) % $br == 0) {?>
@@ -40,12 +40,12 @@
         </div>
       </div>
       
-<?foreach ($text['reviews']['content']['text'] as $i => $review) { ?>
+<?/*foreach ($text['reviews']['content']['text'] as $i => $review) { ?>
 <?  if(isset($review['image'])) {?>
   <div class="modal" id="review<?=$i?>">
     <i class="modal__close">×</i>
     <img src="<?=$review['image']?>" alt="<?=$text['reviews']['title']?>" class="modal__image">
   </div>
 <?  }?>
-<?}?>
+<?}*/?>
 <div class="overlay"></div>

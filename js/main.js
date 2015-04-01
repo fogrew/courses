@@ -46,18 +46,35 @@ $(function() {
   });
 
   $('.fotorama').on('fotorama:ready', function (e, fotorama) {
-    $('.link-modal').on('click', function() {
-      $('.modal').removeClass('modal_opened');
-      $('#'+$(this).data('modal')).addClass('modal_opened');
-      $('.overlay').addClass('overlay_opened');
-      return false;
-    });
-    $('.overlay').on('click', function() {
-      $('.modal').removeClass('modal_opened');
-      $(this).removeClass('overlay_opened');
-    });
-    $('.modal').on('click', function() {
-      $(this).toggleClass('modal_zoom');
+    $(".fancybox").fancybox({
+      padding: 0,
+      margin: [20, 60, 20, 60],
+      keys: {
+        next : {
+          13 : 'left', // enter
+          34 : 'up',   // page down
+          39 : 'left', // right arrow
+          40 : 'up'    // down arrow
+        },
+        prev : {
+          8  : 'right',  // backspace
+          33 : 'down',   // page up
+          37 : 'right',  // left arrow
+          38 : 'down'    // up arrow
+        },
+        close  : [27], // escape key
+        play   : [32], // space - start/stop slideshow
+        toggle : [70]  // letter "f" - toggle fullscreen
+      },
+      helpers:  {
+        title : {
+          type : 'outside',
+          position: 'top'
+        },
+        overlay : {
+          showEarly : false
+        }
+      }
     });
   });
 
