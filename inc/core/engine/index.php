@@ -12,9 +12,9 @@ if($dev === true) {
 if($less === true) {
   include ROOT."/inc/core/libs/less/Less.php";
   $options = array( "compress"=>true );
-  if($dev == true) {
-    $options["sourceMap"] = true;
-  }
+  // if($dev == true) {
+  //   $options["sourceMap"] = true;
+  // }
   try {
     $parser = new Less_Parser($options);
     $parser->parseFile( ROOT.'/inc/view/'.VIEW.'/less/style.less', ROOT.'/inc/view/'.VIEW.'/less/' );
