@@ -17,7 +17,7 @@ $text['navbar'][$i]['type']       = 'callback';
 $text['navbar'][$i]['phone']      = '(812) 915-83-13';
 $text['navbar'][$i++]['callback'] = 'обратный звонок';
 
-$text['navbar'][$i]['anchor']     = 'price';
+$text['navbar'][$i]['anchor']     = 'prices';
 $text['navbar'][$i]['type']       = 'link';
 $text['navbar'][$i++]['text']     = 'Цены';
 
