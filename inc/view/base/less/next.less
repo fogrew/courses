@@ -1,6 +1,5 @@
 .next {
-	background-color: rgba(red(@base), green(@base), blue(@base), .5);
-	color: @white;
+	background-color: rgba(red(@base), green(@base), blue(@base), .05);
 	padding: 20px;
 	text-align: center;
 
@@ -15,13 +14,14 @@
 		vertical-align: middle;
 		margin-left: 20px;
 		font-size: 50px;
+		color: @white;
 	}
 	&__day,
 	&__month,
 	&__year {
 		padding: 4px 6px 0;
-		background-color: rgba(red(@base), green(@base), blue(@base), .5);
-		background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-    background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+		background-color: @base;
+		background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%,);
+    background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%,);
 	}
 }
