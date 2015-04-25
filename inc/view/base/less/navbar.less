@@ -4,21 +4,6 @@
 	background-color: @navbar-bg;
 	overflow: hidden;
 	z-index: @z-index-navbar;
-	
-	.container {
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-flex-direction: row;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-webkit-justify-content: space-between;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
-		-webkit-align-items: stretch;
-		    -ms-flex-align: stretch;
-		        align-items: stretch;
-	}
 
 	&_fixed {
 		position: fixed;
@@ -28,6 +13,7 @@
 	}
 
 	&__item {
+		float: left;
 		height: @navbar-height;
 		color: @navbar-item-color;
 		text-decoration: none;
@@ -50,7 +36,7 @@
 		&_button {
 			height: 40px;
 			padding: 10px;
-			margin: 10px 0 10px 10px;
+			margin: 10px 0 10px 8px;
 			border-radius: @navbar-join-border-radius;
 			border: 1px solid @navbar-border;
 			background-color: @navbar-bg;
