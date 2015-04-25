@@ -1,0 +1,20 @@
+.thinks {
+	padding: 10px 0;
+	text-align: center;
+	&_important {
+		background-color: @primary;
+		color: @white;
+		.thinks__think {
+			border-left-color: @white; 
+		}
+	}
+	&__think {
+		display: inline-block;
+		margin-left: -4px;
+		padding: 0 10px;
+		border-left: 1px solid @base;
+		&:first-child {
+			border-left: 0;
+		}
+	}
+}

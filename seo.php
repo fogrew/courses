@@ -18,6 +18,7 @@ $blocks = [
 	['meta'],
 	['header',''],
 	['hero','screen'],
+	['about','screen'],
 	['navbar',''],
 	['features','screen'],
 	['form-phone','line bright'],
