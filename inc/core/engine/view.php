@@ -16,7 +16,9 @@ foreach ($blocks as $key => $block) {
     $block_class = explode(' ', $block[1]);
     $classes = $block[0].' block';
     foreach ($block_class as $i => $class) {
-      $classes = $classes.' block_'.$class;
+      if($class != '') {
+        $classes = $classes.' block_'.$class;
+      }
     } ?>
 
   <div class="<?=$classes?>" id="<?=$block[0]?>">
