@@ -12,6 +12,9 @@
                 <li><?=$item['item']?></li>
 <?    }?>
               </ul>
+              <div class="program__links">
+                <a href="<?=$program['theory']?>" data-fancybox-type="iframe" class="various"><?=$text['program']['more']['theory']?></a> | <a href="<?=$program['practic']?>" data-fancybox-type="iframe" class="various"><?=$text['program']['more']['practic']?></a>
+              </div>
             </div>
 <?  }?>
           </div>
