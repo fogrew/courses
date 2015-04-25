@@ -12,7 +12,7 @@
 		position: absolute;
 		top: 20px;
 		left: 50%;
-		.translate3d(-50%,0,0);
+		.translateX(-50%);
 		background-color: rgba(255,255,255,.85);
 		color: @base;
 		z-index: 1;
@@ -22,12 +22,12 @@
 	}
 	&:hover &__overlay,
 	&:focus &__overlay {
-		.translate3d(-50%,-120px,0);
+		.translate(-50%,-120px);
 		padding-bottom: 10px;
 	}
 	&__title {
 		font-size: 48px;
-		font-weight: normal;
+		font-weight: 400;
 		text-align: center;
 		margin-bottom: 30px;
 	}

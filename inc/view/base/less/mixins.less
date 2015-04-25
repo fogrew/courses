@@ -13,38 +13,43 @@
   -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
           box-shadow: @shadow;
 }
-.box-sizing(@boxmodel) {
-  -webkit-box-sizing: @boxmodel;
-     -moz-box-sizing: @boxmodel;
-          box-sizing: @boxmodel;
-}
 .transition(@params) {
   -webkit-transition: @params;
-  -o-transition: @params;
   transition: @params;
 }
 .transform(@transform) {
   -webkit-transform: @transform;
       -ms-transform: @transform; // IE9 only
-       -o-transform: @transform;
           transform: @transform;
+}
+.translate(@x, @y) {
+  -webkit-transform: translate(@x, @y);
+  -ms-transform: translate(@x, @y);
+  transform: translate(@x, @y);
+}
+.translateX(@x) {
+  -webkit-transform: translateX(@x);
+  -ms-transform: translateX(@x);
+  transform: translateX(@x);
+}
+.translateY(@y) {
+  -webkit-transform: translateY(@y);
+  -ms-transform: translateY(@y);
+  transform: translateY(@y);
 }
 .translate3d(@x, @y, @z) {
   -webkit-transform: translate3d(@x, @y, @z);
   -ms-transform: translate3d(@x, @y, @z);
-  -o-transform: translate3d(@x, @y, @z);
   transform: translate3d(@x, @y, @z);
 }
 .scale(@ratio) {
   -webkit-transform: scale(@ratio);
       -ms-transform: scale(@ratio); // IE9 only
-       -o-transform: scale(@ratio);
           transform: scale(@ratio);
 }
 .rotate(@degrees) {
   -webkit-transform: rotate(@degrees);
       -ms-transform: rotate(@degrees); // IE9 only
-       -o-transform: rotate(@degrees);
           transform: rotate(@degrees);
 }
 .user-select(@select) {
