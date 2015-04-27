@@ -1,3 +1,4 @@
+@folder: '/';
 
 @container: 1000px;
 
@@ -21,7 +22,7 @@
 @padding-line: 50px 0 40px;
 
 @hero-text: darken(@gray, 15%);
-@hero-bg: #E3EADD url('/i/bg.jpg');
+@hero-bg: #E3EADD url('@{folder}i/bg.jpg');
 @hero-offset: 30px;
 
 @hero-form-width: 330px;
@@ -39,6 +40,8 @@
 @navbar-join-border-radius: 4px;
 
 @callback-bg: @base;
+
+@footer-bg: url('@{folder}i/fon.jpg');
 
 @media-accent-fsz: 50px;
 @media-unit-fsz: 20px;
