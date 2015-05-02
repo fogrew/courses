@@ -2,7 +2,7 @@
 <?foreach ($text['hero']['thinks'] as $i => $thinks) {?>
       <div class="hero__thinks thinks thinks_<?=$thinks['style']?>">
 <?foreach ($thinks['think'] as $j => $think) {?>
-        <div class="thinks__think"><?=$think?></div>
+        <div class="thinks__think"><?if(isset($think['image'])) {?><img src="<?=$think['image']?>" class="thinks__image" alt="<?=$think['text']?>"><?}?><?=$think['text']?></div>
 <?}?>
       </div>
 <?}?>
