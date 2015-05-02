@@ -1,0 +1,1 @@
+  <button class="prespoiler"><?=$text['prespoiler']?></button>

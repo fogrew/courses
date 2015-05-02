@@ -45,6 +45,71 @@ $(function() {
     $('.calc__value-text').text($(this).find('option:selected').data('price'));
   });
 
+  $('.fotorama').on('fotorama:ready', function (e, fotorama) {
+    if($('.fancybox').length) {
+      $(".fancybox").fancybox({
+        padding: 0,
+        margin: [20, 60, 20, 60],
+        keys: {
+          next : {
+            13 : 'left', // enter
+            34 : 'up',   // page down
+            39 : 'left', // right arrow
+            40 : 'up'    // down arrow
+          },
+          prev : {
+            8  : 'right',  // backspace
+            33 : 'down',   // page up
+            37 : 'right',  // left arrow
+            38 : 'down'    // up arrow
+          },
+          close  : [27], // escape key
+          play   : [32], // space - start/stop slideshow
+          toggle : [70]  // letter "f" - toggle fullscreen
+        },
+        helpers:  {
+          title : {
+            type : 'outside',
+            position: 'top'
+          },
+          overlay : {
+            showEarly : false
+          }
+        }
+      });
+    }
+  });
+
+  if($('.owl-carousel').length) {
+    $('.owl-carousel').owlCarousel({
+      items:6,
+      lazyLoad:true,
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true
+    });
+  }
+
+  $('.accordion').on('click','.accordion__title', function() {
+    $(this).toggleClass('accordion__title_opened').next().slideToggle();
+  });
+
+  if($('.various').length) {
+    $(".various").fancybox({
+      maxWidth    : 800,
+      maxHeight   : 600,
+      fitToView   : false,
+      width       : '70%',
+      height      : '70%',
+      autoSize    : false,
+      closeClick  : false,
+      openEffect  : 'none',
+      closeEffect : 'none'
+    });
+  }
+
   // load more program
   $('.load-more__button').on('click', function() {
     var txt = $(".program__marks_hidden").length ? 'Скрыть' : 'Посмотреть ещё';
@@ -138,4 +203,21 @@ $(function() {
       return false;
     });
   });
+
+  if($('#map-view').length) {
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map-view', {
+                center: [59.956503, 30.320698],
+                zoom: 17
+            }),
+            myPlacemark = new ymaps.Placemark([59.95603, 30.322983], 0, {
+                iconLayout: 'default#image',
+                iconImageHref: 'i/map.svg',
+                iconImageSize: [38, 55],
+                iconImageOffset: [-48, -48]
+            });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+    });
+  }
 });

@@ -1,0 +1,27 @@
+.next {
+	background-color: rgba(red(@base), green(@base), blue(@base), .05);
+	padding: 20px;
+	text-align: center;
+
+	&__text {
+		font-size: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		
+	}
+	&__date {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 20px;
+		font-size: 50px;
+		color: @white;
+	}
+	&__day,
+	&__month,
+	&__year {
+		padding: 4px 6px 0;
+		background-color: @primary;
+		background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%,);
+    background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%,);
+	}
+}

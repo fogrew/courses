@@ -1,0 +1,31 @@
+.hero {
+	background: @hero-bg;
+	background-size: 100% 150%;
+	background-position: 0;
+
+	&__call {
+		margin-top: 30px;
+		.clearfix;
+	}
+
+	&__media {
+		float: left;
+	}
+
+	&__action {
+		margin-left: @hero-form-ml;
+		float: right;
+		width: @hero-form-width;
+	}
+
+	&__form-title {
+		font-size: 18px;
+		text-align: center;
+		margin-bottom: 10px;
+		&_line {
+			font-size: 20px;
+			text-align: center;
+			margin: 0 -40px 26px;
+		}
+	}
+}

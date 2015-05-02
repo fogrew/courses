@@ -1,6 +1,6 @@
 <?php
 /** Your Email. All Contact messages will be sent there */
-$your_email = 'andrew@gurylev.com';
+$your_email = 'vasilev.danil@gmail.com';
 $your_phone = '(812) 915-83-13';
 
 /* Do not change any code below this line unless you are sure what you are doing. */
@@ -31,7 +31,7 @@ if (count($errors) == 0) {
 
 	$mail->From = $email;
 	$mail->FromName = '';
-	$mail->Subject = 'Сообщение из формы на сайте http://'.$_SERVER['HTTP_HOST'].'/';
+	$mail->Subject = 'Сообщение из формы на сайте http://'.$_SERVER['HTTP_HOST'].'/'.$_SERVER['REQUEST_URI'];
 	$mail->Body  = "Имя: ".$name;
 if($email != 'seo@ipkp.ru') $mail->Body .= "\n"."Email: ".$email;
 	$mail->Body .= "\n"."Телефон: ".$phone;

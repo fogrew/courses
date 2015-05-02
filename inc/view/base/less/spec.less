@@ -1,0 +1,33 @@
+.spec {
+  position: relative;
+  float: left;
+ 	width: 33%;
+  min-height: 1px;
+
+  &__content {
+    display: table-row;
+  }
+
+  &__image,
+  &__text {
+    display: table-cell;
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    vertical-align: top;
+    border-radius: 100%;
+  	background-color: rgba(red(@base), green(@base), blue(@base), .05);
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    vertical-align: middle;
+  }
+}

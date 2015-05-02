@@ -1,0 +1,32 @@
+.button {
+	display: inline-block;
+	padding: 8px 18px 6px;
+	border: 0;
+	background-color: @primary;
+	color: @white;
+	border-radius: 4px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 300;
+	letter-spacing: 1px;
+	.transition(box-shadow .5s ease);
+
+	&:hover,
+	&:focus {
+		color: @white;
+		outline: none;
+		box-shadow: 0 1px 4px 0 rgba(red(@primary),green(@primary),blue(@primary),.5);
+	}
+
+	&_block,
+	&_line {
+		width: 100%;
+		padding: 16px;
+	}
+	&_block {
+		margin-top: 10px;
+	}
+	&_line {
+		margin-top: 28px;
+	}
+}

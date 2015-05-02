@@ -1,0 +1,56 @@
+.navbar {
+	height: @navbar-height;
+	border-bottom: 1px solid @navbar-border;
+	background-color: @navbar-bg;
+	overflow: hidden;
+	z-index: @z-index-navbar;
+
+	&_fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	&__item {
+		float: left;
+		height: @navbar-height;
+		color: @navbar-item-color;
+		text-decoration: none;
+		.transition(@navbar-item-transition);
+
+		&_link {
+			padding: @navbar-link-padding;
+			text-transform: uppercase;
+			
+			&:hover,
+			&:focus {
+				background-color: @navbar-link-hover-bg;
+				color: @navbar-link-hover-color;
+				.scale(1.1);
+			}
+		}
+		&_callback {
+
+		}
+		&_button {
+			height: 40px;
+			padding: 10px;
+			margin: 10px 0 10px 7px;
+			border-radius: @navbar-join-border-radius;
+			border: 1px solid @navbar-border;
+			background-color: @navbar-bg;
+			color: @navbar-item-color;
+			text-decoration: none;
+			text-transform: uppercase;
+			.transition(all .25s ease);
+
+			&:hover,
+			&:focus {
+				background-color: @navbar-link-hover-bg;
+				color: @navbar-link-hover-color;
+				.scale(1.05);
+			}
+		}
+	}
+}

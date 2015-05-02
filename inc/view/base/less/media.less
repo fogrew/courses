@@ -1,0 +1,40 @@
+.media {
+	&__left,
+	&__text {
+  	display: table-cell;
+  	vertical-align: middle;
+	}
+
+  &__image {
+  	float: left;
+  	margin-right: 20px;
+    
+    .transition(all .25s ease);
+    &:hover {
+      .scale(1.1);
+    }
+  }
+
+	&__text {
+  	width: 10000px;
+	}
+
+	&__accent {
+		font-size: @media-accent-fsz;
+	}
+	&__unit {
+		font-size: @media-unit-fsz;
+	}
+
+	&__title {
+		margin: 20px 0 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__content {
+		font-weight: 300;
+		font-size: 15px;
+		color: @gray;
+	}
+}
